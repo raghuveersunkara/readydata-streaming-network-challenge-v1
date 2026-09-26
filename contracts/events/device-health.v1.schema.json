@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "device-health.v1.schema.json",
+  "title": "Device health event V1",
+  "allOf": [
+    {
+      "$ref": "common-envelope.v1.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "event_type": {
+          "const": "device_health"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "cpu_pct",
+            "memory_pct",
+            "temperature_c"
+          ],
+          "properties": {
+            "cpu_pct": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "memory_pct": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "temperature_c": {
+              "type": "number",
+              "minimum": -50,
+              "maximum": 200
+            },
+            "optical_rx_power_dbm": {
+              "type": "number",
+              "minimum": -50,
+              "maximum": 10
+            },
+            "snr_db": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "signal_strength_dbm": {
+              "type": "number",
+              "minimum": -150,
+              "maximum": 0
+            },
+            "signal_quality_pct": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            }
+          }
+        }
+      }
+    }
+  ]
+}

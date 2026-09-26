@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "connectivity-state.v1.schema.json",
+  "title": "Connectivity state event V1",
+  "allOf": [
+    {
+      "$ref": "common-envelope.v1.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "event_type": {
+          "const": "connectivity_state"
+        },
+        "site_id": {
+          "type": "string",
+          "pattern": "^site-[0-9]{4}$"
+        },
+        "device_id": {
+          "type": "string",
+          "pattern": "^device-[0-9]{4}$"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["previous_state", "new_state", "reason"],
+          "properties": {
+            "previous_state": {
+              "enum": ["online", "degraded", "offline"]
+            },
+            "new_state": {
+              "enum": ["online", "degraded", "offline"]
+            },
+            "reason": {
+              "enum": [
+                "upstream_congestion",
+                "upstream_outage",
+                "upstream_recovery",
+                "upstream_recovered"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

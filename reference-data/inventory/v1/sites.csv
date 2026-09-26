@@ -1,0 +1,624 @@
+site_id,latitude,longitude,region,block_group_geoid,inside_census_urban_area,urban_area_name,distance_to_nearest_urban_area_km,nearest_census_place,distance_to_nearest_place_km,site_type,critical_infrastructure
+network-site-agg-central-01,34.723075,-92.365001,central,051190024033,true,"Little Rock, AR",0.000,Little Rock city,0.683,network_facility,false
+network-site-agg-central-02,34.723178,-92.364999,central,051190024033,true,"Little Rock, AR",0.000,Little Rock city,0.681,network_facility,false
+network-site-agg-northeast-01,35.813350,-90.672571,northeast,050310004031,true,"Jonesboro, AR",0.000,Jonesboro city,0.920,network_facility,false
+network-site-agg-northeast-02,35.814843,-90.673141,northeast,050310004031,true,"Jonesboro, AR",0.000,Jonesboro city,0.762,network_facility,false
+network-site-agg-northwest-01,36.073592,-94.168128,northwest,051430107042,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,0.276,network_facility,false
+network-site-agg-northwest-02,36.073079,-94.168571,northwest,051430107042,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,0.255,network_facility,false
+network-site-agg-ouachita-01,34.476820,-93.048401,ouachita,050510117021,true,"Hot Springs, AR",0.000,Hot Springs city,1.414,network_facility,false
+network-site-agg-ouachita-02,34.491174,-93.057258,ouachita,050510117021,true,"Hot Springs, AR",0.000,Hot Springs city,0.670,network_facility,false
+network-site-agg-ozarks-01,36.334426,-92.377620,ozarks,050059502001,true,"Mountain Home, AR",0.000,Mountain Home city,0.588,network_facility,false
+network-site-agg-ozarks-02,36.337818,-92.375851,ozarks,050059502001,true,"Mountain Home, AR",0.000,Mountain Home city,0.803,network_facility,false
+network-site-agg-river_valley-01,35.351652,-94.388111,river_valley,051310011014,true,"Fort Smith, AR--OK",0.000,Fort Smith city,1.585,network_facility,false
+network-site-agg-river_valley-02,35.353447,-94.388211,river_valley,051310011014,true,"Fort Smith, AR--OK",0.000,Fort Smith city,1.639,network_facility,false
+network-site-agg-southeast-01,34.212123,-92.016789,southeast,050690016003,true,"Pine Bluff, AR",0.000,Pine Bluff city,0.092,network_facility,false
+network-site-agg-southeast-02,34.208633,-92.022709,southeast,050690016003,true,"Pine Bluff, AR",0.000,Pine Bluff city,0.577,network_facility,false
+network-site-agg-southwest-01,33.448072,-94.000299,southwest,050919800001,false,"Hope, AR",41.118,Texarkana city,1.788,network_facility,false
+network-site-agg-southwest-02,33.455557,-93.994531,southwest,050919800001,false,"Hope, AR",40.205,Texarkana city,2.245,network_facility,false
+network-site-core-bs_and_s,34.721668,-92.363027,central,051190024033,true,"Little Rock, AR",0.000,Little Rock city,0.558,network_facility,false
+network-site-core-cable_two,35.809579,-90.690269,northeast,050310004031,true,"Jonesboro, AR",0.000,Jonesboro city,1.519,network_facility,false
+network-site-core-meverse,35.355478,-94.391781,river_valley,051310011014,true,"Fort Smith, AR--OK",0.000,Fort Smith city,2.017,network_facility,false
+network-site-core-moon_link,34.725041,-92.361072,central,051190024033,true,"Little Rock, AR",0.000,Little Rock city,0.338,network_facility,false
+network-site-core-zfinity,36.073745,-94.169059,northwest,051430107042,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,0.339,network_facility,false
+network-site-ixp-central,34.720747,-92.359963,central,051190024033,true,"Little Rock, AR",0.000,Little Rock city,0.419,network_facility,false
+network-site-ixp-northwest,36.074295,-94.169620,northwest,051430107042,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,0.419,network_facility,false
+site-0001,34.659933,-92.436143,central,051190042202,true,"Little Rock, AR",0.000,Alexander city,4.803,government,false
+site-0002,34.832378,-92.397801,central,051190043072,true,"Little Rock, AR",0.000,Maumelle city,2.229,residential,false
+site-0003,34.853890,-92.001049,central,050850203012,false,"Little Rock, AR",7.511,Lonoke city,11.082,residential,false
+site-0004,34.889124,-92.081801,central,051190036092,true,"Little Rock, AR",0.000,Jacksonville city,4.552,residential,false
+site-0005,34.775144,-92.202840,central,051190027005,true,"Little Rock, AR",0.000,McAlmont CDP,2.027,residential,false
+site-0006,35.226482,-92.494404,central,050450301041,false,"Conway, AR",11.491,Wooster town,4.991,residential,false
+site-0007,34.658895,-92.331721,central,051190041081,true,"Little Rock, AR",0.000,Landmark CDP,5.585,residential,false
+site-0008,34.597128,-92.540014,central,051250101041,true,"Little Rock, AR",0.000,Benton city,3.700,residential,false
+site-0009,34.789069,-92.271300,central,051190033052,true,"Little Rock, AR",0.000,North Little Rock city,3.408,business,false
+site-0010,34.753976,-92.432251,central,051190042181,true,"Little Rock, AR",0.000,Little Rock city,7.592,residential,false
+site-0011,34.731067,-92.326685,central,051190019002,true,"Little Rock, AR",0.000,Little Rock city,2.934,residential,false
+site-0012,34.799142,-92.259619,central,051190033053,true,"Little Rock, AR",0.000,North Little Rock city,2.961,residential,false
+site-0013,35.001516,-92.690315,central,051059527003,false,"Morrilton, AR",14.961,Houston town,3.730,residential,false
+site-0014,34.839183,-92.410899,central,051190043082,true,"Little Rock, AR",0.000,Maumelle city,1.770,business,false
+site-0015,34.722484,-92.356324,central,051190021022,true,"Little Rock, AR",0.000,Little Rock city,0.204,residential,false
+site-0016,34.767204,-92.388093,central,051190022112,true,"Little Rock, AR",0.000,Cammack Village city,4.218,residential,false
+site-0017,34.758343,-92.375601,central,051190022032,true,"Little Rock, AR",0.000,Cammack Village city,3.750,residential,false
+site-0018,34.633685,-92.474324,central,051250105192,true,"Little Rock, AR",0.000,Bryant city,2.591,business,false
+site-0019,34.815467,-92.241829,central,051190037121,true,"Little Rock, AR",0.000,North Little Rock city,3.800,residential,false
+site-0020,35.100412,-92.494252,central,050450305032,true,"Conway, AR",0.000,Conway city,3.809,business,false
+site-0021,34.743773,-92.398044,central,051190024071,true,"Little Rock, AR",0.000,Little Rock city,4.301,residential,false
+site-0022,34.571566,-92.287683,central,051250104053,false,"Little Rock, AR",6.866,East End CDP,4.108,business,false
+site-0023,34.607550,-92.605700,central,051250103031,true,"Little Rock, AR",0.000,Benton city,4.518,school,false
+site-0024,34.855255,-92.118495,central,051190036053,true,"Little Rock, AR",0.000,Jacksonville city,3.017,residential,false
+site-0025,34.702322,-92.403829,central,051190024052,true,"Little Rock, AR",0.000,Little Rock city,4.863,residential,false
+site-0026,34.747318,-92.271865,central,051190044001,true,"Little Rock, AR",0.000,North Little Rock city,5.096,residential,false
+site-0027,34.687202,-92.203656,central,051190040072,false,"Little Rock, AR",1.678,College Station CDP,2.707,residential,false
+site-0028,34.851350,-92.153685,central,051190036052,false,"Little Rock, AR",1.335,Jacksonville city,3.867,residential,false
+site-0029,35.099737,-92.469712,central,050450306002,true,"Conway, AR",0.000,Conway city,2.833,residential,false
+site-0030,34.937373,-92.463947,central,050450311023,false,"Conway, AR",2.702,Roland CDP,6.251,business,false
+site-0031,34.784983,-92.286843,central,051190030021,true,"Little Rock, AR",0.000,North Little Rock city,4.743,residential,false
+site-0032,34.780533,-92.492522,central,051190042131,true,"Little Rock, AR",0.000,Natural Steps CDP,10.434,business,false
+site-0033,35.097388,-92.473746,central,050450306001,true,"Conway, AR",0.000,Conway city,2.633,residential,false
+site-0034,35.018449,-92.326378,central,050450303031,false,"Conway, AR",5.455,Mayflower city,9.471,residential,false
+site-0035,35.115548,-92.288402,central,050450304022,false,"Conway, AR",8.770,Holland city,5.706,residential,false
+site-0036,34.913408,-91.761037,central,050850201071,false,"Beebe, AR",18.684,Carlisle city,13.252,residential,false
+site-0037,34.613714,-92.467858,central,051250104111,true,"Little Rock, AR",0.000,Alexander city,1.615,residential,false
+site-0038,34.993625,-91.990754,central,050850202023,false,"Little Rock, AR",0.043,Austin city,1.370,residential,false
+site-0039,34.764842,-92.442222,central,051190042231,true,"Little Rock, AR",0.000,Little Rock city,8.967,residential,false
+site-0040,34.872115,-92.412339,central,051190043061,true,"Little Rock, AR",0.000,Maumelle city,2.470,business,false
+site-0041,34.730137,-92.321749,central,051190019002,true,"Little Rock, AR",0.000,Little Rock city,3.348,government,true
+site-0042,35.083356,-92.447785,central,050450307022,true,"Conway, AR",0.000,Conway city,2.021,residential,false
+site-0043,34.512816,-92.563811,central,051250106022,false,"Little Rock, AR",2.461,Haskell city,7.163,business,false
+site-0044,34.719765,-92.325913,central,051190019003,true,"Little Rock, AR",0.000,Little Rock city,2.935,school,false
+site-0045,34.731313,-92.387266,central,051190024101,true,"Little Rock, AR",0.000,Little Rock city,2.830,residential,false
+site-0046,34.745010,-92.422615,central,051190042181,true,"Little Rock, AR",0.000,Little Rock city,6.384,business,false
+site-0047,34.792957,-92.402643,central,051190042153,true,"Little Rock, AR",0.000,Cammack Village city,5.437,residential,false
+site-0048,35.087237,-92.164865,central,050450303021,false,"Little Rock, AR",9.891,Vilonia city,4.694,residential,false
+site-0049,34.871978,-92.416118,central,051190043061,true,"Little Rock, AR",0.000,Maumelle city,2.633,residential,false
+site-0050,34.769458,-92.384834,central,051190022112,true,"Little Rock, AR",0.000,Cammack Village city,3.853,library,false
+site-0051,34.631015,-92.305201,central,051190040062,false,"Little Rock, AR",2.432,Landmark CDP,2.503,residential,false
+site-0052,34.772174,-92.410682,central,051190022061,true,"Little Rock, AR",0.000,Cammack Village city,6.077,residential,false
+site-0053,34.824420,-92.168826,central,051190038001,true,"Little Rock, AR",0.000,McAlmont CDP,4.332,residential,false
+site-0054,34.788349,-92.447243,central,051190042281,true,"Little Rock, AR",0.000,Maumelle city,8.321,residential,false
+site-0055,34.557766,-92.581207,central,051250101012,true,"Little Rock, AR",0.000,Benton city,2.324,residential,false
+site-0056,34.535398,-92.395992,central,051250104061,false,"Little Rock, AR",7.621,Sardis CDP,1.017,residential,false
+site-0057,34.600112,-92.567843,central,051250103022,true,"Little Rock, AR",0.000,Benton city,2.560,school,false
+site-0058,35.103871,-91.974887,central,051450712013,false,"Beebe, AR",5.287,Beebe city,7.573,residential,false
+site-0059,34.759765,-92.447152,central,051190042231,true,"Little Rock, AR",0.000,Little Rock city,9.098,government,true
+site-0060,34.564416,-92.559859,central,051250101051,true,"Little Rock, AR",0.000,Benton city,1.857,business,false
+site-0061,34.796915,-92.268639,central,051190033054,true,"Little Rock, AR",0.000,North Little Rock city,3.500,residential,false
+site-0062,34.598651,-92.517136,central,051250101073,true,"Little Rock, AR",0.000,Bryant city,2.984,residential,false
+site-0063,34.794402,-92.241049,central,051190033082,true,"Little Rock, AR",0.000,North Little Rock city,1.509,residential,false
+site-0064,34.578235,-92.496788,central,051250101061,true,"Little Rock, AR",0.000,Bauxite town,2.060,residential,false
+site-0065,35.060239,-92.193461,central,050450303032,false,"Little Rock, AR",10.352,Vilonia city,2.863,residential,false
+site-0066,34.852034,-92.440372,central,051190043112,false,"Little Rock, AR",0.493,Maumelle city,3.685,residential,false
+site-0067,34.576703,-92.497932,central,051250101061,true,"Little Rock, AR",0.000,Bauxite town,1.879,residential,false
+site-0068,34.814813,-92.239882,central,051190037035,true,"Little Rock, AR",0.000,North Little Rock city,3.703,residential,false
+site-0069,35.240297,-92.290131,central,050450302011,false,"Conway, AR",17.255,Holland city,8.345,residential,false
+site-0070,34.996580,-91.702676,central,051174601001,false,"Beebe, AR",16.547,Griffithville town,15.012,residential,false
+site-0071,34.838460,-92.367122,central,051190043072,true,"Little Rock, AR",0.000,Maumelle city,3.374,business,false
+site-0072,35.095938,-92.284747,central,050450303011,false,"Conway, AR",8.193,Vilonia city,6.596,residential,false
+site-0073,34.978401,-92.022136,central,050850202021,true,"Little Rock, AR",0.000,Cabot city,0.670,school,false
+site-0074,34.474458,-92.596865,central,051250105132,false,"Little Rock, AR",6.891,Tull town,3.831,residential,false
+site-0075,35.089202,-92.492314,central,050450310013,true,"Conway, AR",0.000,Conway city,2.829,residential,false
+site-0076,35.031618,-92.663309,central,051059527002,false,"Morrilton, AR",12.641,Houston town,2.865,residential,false
+site-0077,35.127223,-92.312167,central,050450304021,false,"Conway, AR",7.616,Holland city,5.366,residential,false
+site-0078,34.708552,-91.871376,central,050850205002,false,"Little Rock, AR",23.254,Lonoke city,9.687,residential,false
+site-0079,35.390981,-93.096258,central,051159509023,false,"Russellville, AR",6.877,Dover city,1.630,residential,false
+site-0080,35.065590,-92.667256,central,051059527002,false,"Morrilton, AR",9.023,Houston town,4.222,residential,false
+site-0081,34.868768,-92.425824,central,051190043111,true,"Little Rock, AR",0.000,Maumelle city,2.981,residential,false
+site-0082,35.366466,-93.075630,central,051159509023,false,"Russellville, AR",6.049,Dover city,4.437,business,false
+site-0083,34.770897,-92.388147,central,051190022112,true,"Little Rock, AR",0.000,Cammack Village city,4.094,residential,false
+site-0084,35.024474,-92.039481,central,050850201051,false,"Little Rock, AR",0.051,Austin city,4.989,residential,false
+site-0085,34.780827,-92.271240,central,051190029001,true,"Little Rock, AR",0.000,North Little Rock city,3.306,residential,false
+site-0086,34.776381,-92.468479,central,051190042131,true,"Little Rock, AR",0.000,Maumelle city,10.509,residential,false
+site-0087,34.607580,-92.607784,central,051250103031,true,"Little Rock, AR",0.000,Benton city,4.650,residential,false
+site-0088,34.784207,-92.347486,central,051190049013,true,"Little Rock, AR",0.000,Cammack Village city,0.443,residential,false
+site-0089,35.509378,-92.034806,central,050234803022,true,"Heber Springs, AR",0.000,Heber Springs city,1.199,residential,false
+site-0090,35.094631,-92.476029,central,050450306001,true,"Conway, AR",0.000,Conway city,2.398,residential,false
+site-0091,34.797446,-92.385577,central,051190042052,true,"Little Rock, AR",0.000,Cammack Village city,4.144,residential,false
+site-0092,34.797138,-92.383887,central,051190042052,true,"Little Rock, AR",0.000,Cammack Village city,3.991,residential,false
+site-0093,35.460830,-91.908540,central,050234801003,false,"Heber Springs, AR",8.095,Wilburn CDP,5.637,residential,false
+site-0094,34.687891,-92.518980,central,051250105091,false,"Little Rock, AR",2.923,Avilla CDP,6.189,residential,false
+site-0095,34.646105,-92.353679,central,051190041061,true,"Little Rock, AR",0.000,Landmark CDP,5.259,residential,false
+site-0096,34.347909,-92.377490,central,050534702001,false,"Sheridan, AR",2.571,Sheridan city,6.696,residential,false
+site-0097,34.563639,-92.577317,central,051250101012,true,"Little Rock, AR",0.000,Benton city,1.593,residential,false
+site-0098,35.244496,-91.761098,central,051450709011,true,"Searcy, AR",0.000,Searcy city,2.379,residential,false
+site-0099,34.919036,-92.446851,central,050450311022,false,"Conway, AR",2.795,Roland CDP,6.705,residential,false
+site-0100,34.765857,-92.114081,central,051190039001,false,"Little Rock, AR",1.514,Scott CDP,7.804,residential,false
+site-0101,34.924671,-92.083483,central,051190034043,false,"Little Rock, AR",0.148,Jacksonville city,6.524,residential,false
+site-0102,34.841950,-92.373067,central,051190043072,true,"Little Rock, AR",0.000,Maumelle city,2.716,residential,false
+site-0103,34.594683,-92.603731,central,051250103033,true,"Little Rock, AR",0.000,Benton city,3.437,business,false
+site-0104,35.285372,-91.953318,central,051450703001,false,"Searcy, AR",14.148,Floyd CDP,9.671,government,true
+site-0105,34.733172,-92.327420,central,051190019002,true,"Little Rock, AR",0.000,Little Rock city,2.942,residential,false
+site-0106,35.031542,-92.421482,central,050450310062,false,"Conway, AR",0.241,Mayflower city,5.698,school,false
+site-0107,34.835211,-92.048893,central,050850203013,false,"Little Rock, AR",3.755,Jacksonville city,8.997,business,false
+site-0108,35.107452,-92.478293,central,050450305033,true,"Conway, AR",0.000,Conway city,3.820,residential,false
+site-0109,35.082411,-92.442027,central,050450307022,true,"Conway, AR",0.000,Conway city,2.449,residential,false
+site-0110,34.643459,-92.531271,central,051250105112,false,"Little Rock, AR",0.689,Salem CDP,3.098,residential,false
+site-0111,34.857917,-92.109534,central,051190036072,true,"Little Rock, AR",0.000,Jacksonville city,3.163,business,false
+site-0112,34.877018,-92.416828,central,051190043103,true,"Little Rock, AR",0.000,Maumelle city,3.144,business,false
+site-0113,34.593036,-92.535487,central,051250101041,true,"Little Rock, AR",0.000,Benton city,3.814,residential,false
+site-0114,34.607984,-92.430670,central,051250104083,false,"Little Rock, AR",0.417,Alexander city,2.218,residential,false
+site-0115,35.441430,-91.922198,central,050234804001,false,"Heber Springs, AR",8.171,Pangburn city,7.692,residential,false
+site-0116,34.627435,-92.356393,central,051190040064,false,"Little Rock, AR",0.323,Landmark CDP,4.152,residential,false
+site-0117,34.531797,-92.251502,central,051250104052,false,"Little Rock, AR",7.676,Woodson CDP,2.795,residential,false
+site-0118,35.187311,-92.079999,central,051450710021,false,"Little Rock, AR",16.822,Mount Vernon town,5.679,residential,false
+site-0119,34.756181,-92.364360,central,051190021041,true,"Little Rock, AR",0.000,Cammack Village city,3.260,residential,false
+site-0120,34.803041,-92.282581,central,051190032081,true,"Little Rock, AR",0.000,North Little Rock city,4.943,residential,false
+site-0121,34.807123,-92.266011,central,051190032024,true,"Little Rock, AR",0.000,North Little Rock city,3.994,residential,false
+site-0122,34.838746,-92.409862,central,051190043082,true,"Little Rock, AR",0.000,Maumelle city,1.760,business,false
+site-0123,34.950893,-92.008970,central,050850202061,true,"Little Rock, AR",0.000,Cabot city,3.217,business,false
+site-0124,35.104913,-91.798225,central,051450711022,false,"Beebe, AR",6.322,McRae city,2.722,residential,false
+site-0125,35.252292,-92.091755,central,051450703001,false,"Little Rock, AR",24.152,Mount Vernon town,4.329,residential,false
+site-0126,35.083953,-92.471679,central,050450308001,true,"Conway, AR",0.000,Conway city,1.147,school,false
+site-0127,34.950027,-92.406669,central,050450311012,false,"Conway, AR",1.092,Mayflower city,3.562,residential,false
+site-0128,34.789174,-92.232461,central,051190033071,true,"Little Rock, AR",0.000,North Little Rock city,0.859,business,false
+site-0129,34.762630,-92.349604,central,051190021043,true,"Little Rock, AR",0.000,Cammack Village city,2.064,residential,false
+site-0130,35.083104,-92.568640,central,051059527002,false,"Conway, AR",4.205,Menifee town,7.589,library,false
+site-0131,34.663762,-92.369558,central,051190041051,true,"Little Rock, AR",0.000,Shannon Hills city,5.939,residential,false
+site-0132,34.851894,-91.765100,central,050850204001,false,"Little Rock, AR",21.701,Carlisle city,6.669,school,false
+site-0133,34.786419,-92.283455,central,051190030021,true,"Little Rock, AR",0.000,North Little Rock city,4.450,business,false
+site-0134,34.880073,-92.759132,central,051059527004,false,"Little Rock, AR",22.873,Perryville city,15.203,residential,false
+site-0135,34.848773,-92.185100,central,051190037072,true,"Little Rock, AR",0.000,Sherwood city,1.805,school,false
+site-0136,34.967626,-92.176687,central,051190034031,false,"Little Rock, AR",7.151,Gibson CDP,9.330,residential,false
+site-0137,34.728941,-92.364390,central,051190024031,true,"Little Rock, AR",0.000,Little Rock city,0.830,residential,false
+site-0138,34.782332,-92.408620,central,051190042151,true,"Little Rock, AR",0.000,Cammack Village city,5.815,residential,false
+site-0139,34.773931,-92.280641,central,051190030023,true,"Little Rock, AR",0.000,North Little Rock city,4.253,residential,false
+site-0140,34.694278,-92.465721,central,051190042271,false,"Little Rock, AR",2.874,Alexander city,8.523,residential,false
+site-0141,34.808554,-92.502073,central,051190042132,true,"Little Rock, AR",0.000,Natural Steps CDP,7.317,residential,false
+site-0142,35.079069,-92.449383,central,050450309001,true,"Conway, AR",0.000,Conway city,1.694,residential,false
+site-0143,34.883165,-92.223506,central,051190034063,true,"Little Rock, AR",0.000,Gibson CDP,2.643,residential,false
+site-0144,34.843973,-92.225118,central,051190037142,true,"Little Rock, AR",0.000,Sherwood city,2.085,residential,false
+site-0145,34.891798,-92.157997,central,051199803001,true,"Little Rock, AR",0.000,Jacksonville city,2.797,residential,false
+site-0146,34.802341,-92.451017,central,051190042282,true,"Little Rock, AR",0.000,Maumelle city,7.253,residential,false
+site-0147,34.626947,-92.609300,central,051250105121,false,"Little Rock, AR",0.048,Salem CDP,4.396,residential,false
+site-0148,34.844656,-92.192133,central,051190037113,true,"Little Rock, AR",0.000,Sherwood city,1.394,business,false
+site-0149,35.106491,-92.473438,central,050450305031,true,"Conway, AR",0.000,Conway city,3.620,residential,false
+site-0150,34.804633,-92.419320,central,051190042052,true,"Little Rock, AR",0.000,Maumelle city,5.591,residential,false
+site-0151,34.655923,-92.351804,central,051190041062,true,"Little Rock, AR",0.000,Landmark CDP,6.032,residential,false
+site-0152,34.757841,-92.433979,central,051190042232,true,"Little Rock, AR",0.000,Little Rock city,7.929,residential,false
+site-0153,35.427047,-93.058137,central,051159509021,false,"Russellville, AR",12.100,Dover city,6.476,residential,false
+site-0154,34.729815,-92.319930,central,051190019002,true,"Little Rock, AR",0.000,Little Rock city,3.504,residential,false
+site-0155,34.721751,-92.369289,central,051190024032,true,"Little Rock, AR",0.000,Little Rock city,1.096,business,false
+site-0156,34.889733,-92.436739,central,051190043101,false,"Little Rock, AR",1.464,Maumelle city,5.341,residential,false
+site-0157,35.430632,-91.983648,central,050234805011,false,"Heber Springs, AR",6.506,Heber Springs city,8.710,residential,false
+site-0158,36.066739,-94.198490,northwest,051430106013,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,2.917,residential,false
+site-0159,36.434417,-93.945336,northwest,050070214041,false,"Fayetteville--Springdale--Rogers, AR--MO",13.862,Garfield town,3.588,residential,false
+site-0160,36.177714,-94.095602,northwest,051430103072,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bethel Heights city,5.723,business,false
+site-0161,36.167255,-94.119906,northwest,051430103071,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Springdale city,4.361,business,false
+site-0162,36.439370,-94.306293,northwest,050070208062,false,"Fayetteville--Springdale--Rogers, AR--MO",1.276,Bella Vista city,4.688,residential,false
+site-0163,36.316338,-94.126453,northwest,050070204023,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Rogers city,2.323,residential,false
+site-0164,36.187297,-94.136731,northwest,051430112001,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Springdale city,2.061,residential,false
+site-0165,36.387155,-94.299016,northwest,050070209061,false,"Fayetteville--Springdale--Rogers, AR--MO",0.062,Centerton city,3.561,library,false
+site-0166,36.191654,-94.176933,northwest,051430105191,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Springdale city,1.580,business,false
+site-0167,36.190544,-94.168735,northwest,051430105103,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Springdale city,0.836,business,false
+site-0168,36.193385,-94.531663,northwest,050070211014,true,"Siloam Springs, AR--OK",0.000,Siloam Springs city,0.976,residential,false
+site-0169,36.357242,-94.158989,northwest,050070203041,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Little Flock city,3.493,residential,false
+site-0170,36.482460,-94.358036,northwest,050070208012,false,"Fayetteville--Springdale--Rogers, AR--MO",0.055,Gravette city,6.095,residential,false
+site-0171,36.043542,-94.016704,northwest,051430101122,false,"Fayetteville--Springdale--Rogers, AR--MO",5.069,Elkins city,2.990,residential,false
+site-0172,35.975969,-94.196801,northwest,051430110033,false,"Fayetteville--Springdale--Rogers, AR--MO",2.492,Greenland city,2.311,residential,false
+site-0173,36.005898,-94.266054,northwest,051430110061,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Farmington city,3.624,residential,false
+site-0174,35.933549,-94.261181,northwest,051430110051,false,"Prairie Grove, AR",5.304,Prairie Grove city,6.971,business,false
+site-0175,36.167290,-94.120497,northwest,051430103071,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Springdale city,4.316,school,false
+site-0176,36.172876,-94.556889,northwest,050070212022,true,"Siloam Springs, AR--OK",0.000,Siloam Springs city,2.625,residential,false
+site-0177,36.039981,-94.180342,northwest,051430111051,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,3.712,residential,false
+site-0178,36.115058,-94.139635,northwest,051430101151,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Johnson city,3.748,business,false
+site-0179,36.395561,-94.081934,northwest,050070201024,false,"Fayetteville--Springdale--Rogers, AR--MO",1.176,Avoca town,1.450,residential,false
+site-0180,36.362102,-94.266195,northwest,050070209031,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,1.747,business,false
+site-0181,36.424084,-94.255819,northwest,050070208063,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bella Vista city,4.824,school,false
+site-0182,36.055786,-94.193352,northwest,051430106011,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,2.972,business,false
+site-0183,35.967282,-94.339748,northwest,051430110023,false,"Prairie Grove, AR",0.799,Prairie Grove city,3.885,residential,false
+site-0184,36.457553,-94.228172,northwest,050070207033,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bella Vista city,3.558,business,false
+site-0185,36.120751,-94.196708,northwest,051430105172,false,"Fayetteville--Springdale--Rogers, AR--MO",0.241,Johnson city,2.487,residential,false
+site-0186,36.385370,-94.206741,northwest,050070206051,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,5.301,residential,false
+site-0187,36.344334,-93.588374,northwest,050159503012,false,"Berryville, AR",0.952,Berryville city,3.377,residential,false
+site-0188,36.073414,-93.990523,northwest,051430101122,false,"Fayetteville--Springdale--Rogers, AR--MO",7.831,Goshen town,3.379,residential,false
+site-0189,36.356505,-94.229808,northwest,050070206073,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,1.872,residential,false
+site-0190,36.152967,-94.164209,northwest,051430104052,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Johnson city,2.309,residential,false
+site-0191,36.270451,-94.073428,northwest,050070214071,false,"Fayetteville--Springdale--Rogers, AR--MO",1.383,Prairie Creek CDP,6.691,government,false
+site-0192,36.402100,-93.727610,northwest,050159501002,false,"Berryville, AR",12.955,Eureka Springs city,1.824,residential,false
+site-0193,36.235929,-94.516121,northwest,050070210043,false,"Siloam Springs, AR--OK",0.097,Gentry city,3.468,government,false
+site-0194,36.364438,-94.263601,northwest,050070209031,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,1.742,hospital,true
+site-0195,36.351568,-94.220323,northwest,050070206043,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,2.686,residential,false
+site-0196,35.781418,-93.980142,northwest,051430111031,false,"Fayetteville--Springdale--Rogers, AR--MO",28.698,Winslow city,13.859,residential,false
+site-0197,36.200484,-94.036592,northwest,051430101011,false,"Fayetteville--Springdale--Rogers, AR--MO",5.058,Bethel Heights city,8.673,residential,false
+site-0198,36.124396,-94.071630,northwest,051430101083,false,"Fayetteville--Springdale--Rogers, AR--MO",1.368,Goshen town,6.749,hospital,true
+site-0199,36.122161,-94.078669,northwest,051430101083,false,"Fayetteville--Springdale--Rogers, AR--MO",0.897,Goshen town,7.263,residential,false
+site-0200,36.359977,-94.245800,northwest,050070206041,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,0.869,school,false
+site-0201,36.055581,-94.047114,northwest,051430101133,false,"Fayetteville--Springdale--Rogers, AR--MO",2.448,Elkins city,4.765,residential,false
+site-0202,35.958458,-94.437864,northwest,051430105133,false,"Prairie Grove, AR",9.587,Lincoln city,2.125,residential,false
+site-0203,36.341015,-94.149392,northwest,050070203022,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Rogers city,2.563,residential,false
+site-0204,36.123252,-94.130211,northwest,051430101141,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Johnson city,4.129,residential,false
+site-0205,36.360994,-94.258439,northwest,050070209031,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,1.148,residential,false
+site-0206,36.431569,-93.938824,northwest,050070214051,false,"Fayetteville--Springdale--Rogers, AR--MO",14.283,Garfield town,4.239,hospital,true
+site-0207,36.146895,-94.136505,northwest,051430103042,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Johnson city,3.688,residential,false
+site-0208,36.089550,-94.157013,northwest,051430107061,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,2.187,residential,false
+site-0209,36.186374,-94.554500,northwest,050070212011,true,"Siloam Springs, AR--OK",0.000,Siloam Springs city,2.072,residential,false
+site-0210,36.083123,-94.210957,northwest,051430105162,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,4.195,residential,false
+site-0211,36.367466,-94.213867,northwest,050070206042,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,3.632,residential,false
+site-0212,36.461500,-94.328020,northwest,050070208013,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Gravette city,5.173,residential,false
+site-0213,36.480811,-94.257497,northwest,050070208033,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bella Vista city,1.762,residential,false
+site-0214,36.057957,-94.211867,northwest,051430105212,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,4.340,residential,false
+site-0215,36.134702,-94.161928,northwest,051430104052,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Johnson city,1.112,residential,false
+site-0216,36.093295,-94.226915,northwest,051430105085,false,"Fayetteville--Springdale--Rogers, AR--MO",0.039,Fayetteville city,5.942,residential,false
+site-0217,36.076310,-94.205635,northwest,051430105211,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,3.553,residential,false
+site-0218,36.094267,-94.024606,northwest,051430101131,false,"Fayetteville--Springdale--Rogers, AR--MO",4.635,Goshen town,2.261,residential,false
+site-0219,36.035977,-94.186261,northwest,051430111053,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,4.324,residential,false
+site-0220,36.359763,-94.311674,northwest,050070209063,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Centerton city,1.353,residential,false
+site-0221,36.263662,-94.119092,northwest,050070214062,false,"Fayetteville--Springdale--Rogers, AR--MO",0.364,Lowell city,3.192,school,false
+site-0222,36.143579,-94.177344,northwest,051430105111,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Johnson city,1.116,residential,false
+site-0223,36.270152,-94.153325,northwest,050070213152,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Lowell city,1.590,residential,false
+site-0224,36.274961,-94.113958,northwest,050070214063,false,"Fayetteville--Springdale--Rogers, AR--MO",0.794,Lowell city,4.122,residential,false
+site-0225,36.067415,-94.212903,northwest,051430105212,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,4.189,residential,false
+site-0226,36.342840,-94.239462,northwest,050070206073,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,1.490,residential,false
+site-0227,36.108925,-94.122373,northwest,051430101153,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Johnson city,5.423,residential,false
+site-0228,35.891086,-94.146991,northwest,051430111032,false,"Fayetteville--Springdale--Rogers, AR--MO",11.237,West Fork city,5.762,residential,false
+site-0229,36.354092,-94.252649,northwest,050070206081,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,0.244,residential,false
+site-0230,36.383789,-94.202710,northwest,050070205011,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,5.460,residential,false
+site-0231,36.298986,-94.195128,northwest,050070213062,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Cave Springs city,4.040,residential,false
+site-0232,36.116939,-94.159438,northwest,051430105112,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Johnson city,2.305,business,false
+site-0233,36.452047,-93.574225,northwest,050159504001,false,"Berryville, AR",6.358,Berryville city,9.015,business,false
+site-0234,36.181449,-94.557082,northwest,050070212021,true,"Siloam Springs, AR--OK",0.000,Siloam Springs city,2.321,residential,false
+site-0235,35.966032,-94.524272,northwest,051430110022,false,"Prairie Grove, AR",17.158,Summers CDP,4.406,school,false
+site-0236,36.167939,-94.184216,northwest,051430105122,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Springdale city,3.317,residential,false
+site-0237,35.684837,-94.175712,northwest,050330201012,false,"Fort Smith, AR--OK",19.740,Chester town,0.809,residential,false
+site-0238,36.195175,-94.110973,northwest,051430102021,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bethel Heights city,3.347,residential,false
+site-0239,36.277067,-94.171655,northwest,050070213152,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Lowell city,2.873,business,false
+site-0240,36.096277,-94.253935,northwest,051430105081,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Farmington city,6.639,residential,false
+site-0241,36.454757,-94.081473,northwest,050070201031,false,"Pea Ridge, AR",2.200,Pea Ridge city,3.632,residential,false
+site-0242,36.242506,-94.106383,northwest,050070214063,false,"Fayetteville--Springdale--Rogers, AR--MO",0.855,Bethel Heights city,3.170,business,false
+site-0243,36.490475,-94.122065,northwest,050070201031,false,"Pea Ridge, AR",1.829,Pea Ridge city,4.874,residential,false
+site-0244,36.303827,-94.144285,northwest,050070204043,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Rogers city,1.740,residential,false
+site-0245,36.154637,-94.120164,northwest,051430103031,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Springdale city,5.286,residential,false
+site-0246,35.781156,-94.354436,northwest,051430110042,false,"Prairie Grove, AR",20.909,Morrow CDP,10.816,residential,false
+site-0247,36.382981,-94.211656,northwest,050070206051,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,4.799,residential,false
+site-0248,36.027429,-94.195948,northwest,051430110063,false,"Fayetteville--Springdale--Rogers, AR--MO",0.913,Greenland city,3.503,residential,false
+site-0249,36.121662,-94.196022,northwest,051430105172,false,"Fayetteville--Springdale--Rogers, AR--MO",0.200,Johnson city,2.378,residential,false
+site-0250,36.082441,-94.195922,northwest,051430106021,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,2.908,residential,false
+site-0251,36.374615,-94.192003,northwest,050070205011,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Little Flock city,4.995,residential,false
+site-0252,36.085410,-94.223689,northwest,051430105084,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,5.363,residential,false
+site-0253,36.179802,-94.140897,northwest,051430104021,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Springdale city,2.017,business,false
+site-0254,36.198085,-94.143965,northwest,051430104011,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Springdale city,1.650,residential,false
+site-0255,36.107451,-94.170729,northwest,051430107031,false,"Fayetteville--Springdale--Rogers, AR--MO",0.051,Johnson city,2.953,residential,false
+site-0256,36.362662,-93.936005,northwest,050070214053,false,"Fayetteville--Springdale--Rogers, AR--MO",13.452,Lost Bridge Village CDP,3.524,residential,false
+site-0257,36.449764,-94.216434,northwest,050070207031,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bella Vista city,4.840,residential,false
+site-0258,36.015071,-94.275283,northwest,051430110051,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Farmington city,3.151,residential,false
+site-0259,36.114237,-94.128093,northwest,051430101153,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Johnson city,4.686,business,false
+site-0260,36.358765,-93.588380,northwest,050159503012,false,"Berryville, AR",0.489,Berryville city,2.111,residential,false
+site-0261,35.957373,-94.426446,northwest,051430105133,false,"Prairie Grove, AR",8.597,Lincoln city,1.247,residential,false
+site-0262,36.219321,-94.157098,northwest,050070213142,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bethel Heights city,2.457,residential,false
+site-0263,36.206697,-94.164531,northwest,051430105101,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Springdale city,1.905,residential,false
+site-0264,36.284641,-94.149555,northwest,050070204051,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Lowell city,3.219,residential,false
+site-0265,36.021686,-94.527702,northwest,051430105132,false,"Siloam Springs, AR--OK",14.678,Cincinnati CDP,2.629,residential,false
+site-0266,36.362903,-94.246861,northwest,050070206041,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Bentonville city,1.138,residential,false
+site-0267,36.316067,-94.134168,northwest,050070204023,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Rogers city,1.639,residential,false
+site-0268,36.046082,-94.179606,northwest,051430111051,true,"Fayetteville--Springdale--Rogers, AR--MO",0.000,Fayetteville city,3.055,residential,false
+site-0269,35.299552,-94.403926,river_valley,051310013123,true,"Fort Smith, AR--OK",0.000,Fort Smith city,6.289,residential,false
+site-0270,35.337021,-94.397288,river_valley,051310012023,true,"Fort Smith, AR--OK",0.000,Fort Smith city,2.756,residential,false
+site-0271,35.310151,-94.398957,river_valley,051310013122,true,"Fort Smith, AR--OK",0.000,Fort Smith city,5.041,residential,false
+site-0272,35.374936,-94.362831,river_valley,051310006003,true,"Fort Smith, AR--OK",0.000,Fort Smith city,2.945,residential,false
+site-0273,35.301077,-94.405973,river_valley,051310013123,true,"Fort Smith, AR--OK",0.000,Fort Smith city,6.234,residential,false
+site-0274,35.138161,-93.924796,river_valley,050839505002,false,"Greenwood, AR",26.020,Booneville city,0.676,residential,false
+site-0275,35.397960,-94.409135,river_valley,051310003001,true,"Fort Smith, AR--OK",0.000,Fort Smith city,6.429,residential,false
+site-0276,35.407822,-94.398997,river_valley,051310002005,true,"Fort Smith, AR--OK",0.000,Van Buren city,6.313,residential,false
+site-0277,35.053241,-94.333701,river_valley,051310103031,false,"Greenwood, AR",17.180,Midland town,4.694,residential,false
+site-0278,35.461048,-94.345459,river_valley,050330203011,true,"Fort Smith, AR--OK",0.000,Van Buren city,1.343,residential,false
+site-0279,35.396741,-94.400006,river_valley,051310005011,true,"Fort Smith, AR--OK",0.000,Fort Smith city,5.902,business,false
+site-0280,35.214202,-94.229409,river_valley,051310101024,true,"Greenwood, AR",0.000,Greenwood city,0.965,residential,false
+site-0281,34.910488,-94.278623,river_valley,051279501003,false,"Greenwood, AR",31.380,Hartford city,15.558,residential,false
+site-0282,35.228978,-93.315433,river_valley,050839501001,false,"Russellville, AR",11.359,New Blaine CDP,11.768,business,false
+site-0283,35.338188,-94.398056,river_valley,051310012023,true,"Fort Smith, AR--OK",0.000,Fort Smith city,2.756,residential,false
+site-0284,35.529855,-94.040981,river_valley,050330204021,false,"Fort Smith, AR--OK",14.005,Mulberry city,3.871,residential,false
+site-0285,35.452027,-93.535927,river_valley,050719520001,false,"Clarksville, AR",1.647,Clarksville city,4.929,residential,false
+site-0286,35.356883,-94.333951,river_valley,051310013013,true,"Fort Smith, AR--OK",0.000,Fort Smith city,3.455,residential,false
+site-0287,35.273241,-94.306136,river_valley,051310102011,false,"Fort Smith, AR--OK",2.103,Barling city,7.039,residential,false
+site-0288,35.365927,-94.420787,river_valley,051310010013,true,"Fort Smith, AR--OK",0.000,Fort Smith city,4.890,business,false
+site-0289,35.439802,-93.719928,river_valley,050479502011,false,"Clarksville, AR",17.526,Alix CDP,2.136,residential,false
+site-0290,35.356348,-94.367392,river_valley,051310006004,true,"Fort Smith, AR--OK",0.000,Fort Smith city,0.848,hospital,true
+site-0291,35.205250,-94.234372,river_valley,051310102022,true,"Greenwood, AR",0.000,Greenwood city,0.820,residential,false
+site-0292,35.457923,-93.723136,river_valley,050479502011,false,"Clarksville, AR",17.584,Altus city,3.937,residential,false
+site-0293,35.278071,-94.048125,river_valley,050479503022,false,"Greenwood, AR",16.059,Charleston city,1.829,business,false
+site-0294,35.556690,-94.454426,river_valley,050330202052,false,"Fort Smith, AR--OK",10.539,Uniontown CDP,3.243,public_safety,true
+site-0295,35.411431,-94.401103,river_valley,051310002004,true,"Fort Smith, AR--OK",0.000,Van Buren city,6.143,residential,false
+site-0296,35.268894,-94.357402,river_valley,051310013061,true,"Fort Smith, AR--OK",0.000,Bonanza city,6.742,library,false
+site-0297,35.517043,-94.208309,river_valley,050330206012,false,"Fort Smith, AR--OK",1.383,Alma city,2.785,residential,false
+site-0298,35.616950,-94.187999,river_valley,050330201013,false,"Fort Smith, AR--OK",12.110,Mountainburg city,4.307,government,false
+site-0299,35.307102,-94.145603,river_valley,051310101013,false,"Fort Smith, AR--OK",12.178,Lavaca city,4.247,residential,false
+site-0300,34.542218,-94.229727,river_valley,051139504001,false,"Mena, AR",1.599,Mena city,4.347,residential,false
+site-0301,34.577385,-94.277154,river_valley,051139502011,false,"Mena, AR",0.969,Mena city,3.687,residential,false
+site-0302,35.146456,-94.352746,river_valley,051310103041,false,"Greenwood, AR",9.407,Midland town,6.010,residential,false
+site-0303,35.323812,-94.431310,river_valley,051310013102,true,"Fort Smith, AR--OK",0.000,Fort Smith city,6.169,residential,false
+site-0304,35.215736,-94.239045,river_valley,051310102012,false,"Greenwood, AR",0.100,Greenwood city,0.489,business,false
+site-0305,35.358207,-94.397804,river_valley,051310010021,true,"Fort Smith, AR--OK",0.000,Fort Smith city,2.636,residential,false
+site-0306,35.036855,-94.269545,river_valley,051310103031,false,"Greenwood, AR",17.246,Mansfield city,4.401,business,false
+site-0307,34.616338,-94.342363,river_valley,051139502022,false,"Mena, AR",7.605,Mena city,10.413,business,false
+site-0308,35.483286,-93.505499,river_valley,050719519002,false,"Clarksville, AR",1.262,Clarksville city,3.920,residential,false
+site-0309,35.458158,-93.784253,river_valley,050479502011,false,"Clarksville, AR",23.076,Altus city,2.201,business,false
+site-0310,35.280314,-93.725283,river_valley,050839503003,false,"Clarksville, AR",27.344,Paris city,0.980,business,false
+site-0311,35.341122,-94.419301,river_valley,051310012011,true,"Fort Smith, AR--OK",0.000,Fort Smith city,4.484,residential,false
+site-0312,35.543789,-94.061328,river_valley,050330204021,false,"Fort Smith, AR--OK",12.905,Mulberry city,4.108,residential,false
+site-0313,34.683078,-94.336236,river_valley,051139502021,false,"Mena, AR",11.573,Acorn CDP,13.389,residential,false
+site-0314,35.458230,-94.322900,river_valley,050330202042,false,"Fort Smith, AR--OK",0.021,Van Buren city,2.924,residential,false
+site-0315,35.289587,-94.387276,river_valley,051310013121,true,"Fort Smith, AR--OK",0.000,Fort Smith city,6.802,public_safety,true
+site-0316,35.460857,-94.357667,river_valley,050330203022,true,"Fort Smith, AR--OK",0.000,Van Buren city,1.126,residential,false
+site-0317,35.411595,-94.363444,river_valley,051310001006,true,"Fort Smith, AR--OK",0.000,Van Buren city,4.484,residential,false
+site-0318,35.358948,-94.405483,river_valley,051310010021,true,"Fort Smith, AR--OK",0.000,Fort Smith city,3.317,residential,false
+site-0319,34.568128,-94.286320,river_valley,051139502011,false,"Mena, AR",1.480,Mena city,4.723,school,false
+site-0320,35.313947,-94.102335,river_valley,051310101013,false,"Greenwood, AR",15.057,Charleston city,5.354,residential,false
+site-0321,35.536422,-93.707140,river_valley,050479502011,false,"Clarksville, AR",17.920,Wiederkehr Village city,8.355,residential,false
+site-0322,35.473653,-93.870785,river_valley,050479502022,false,"Fort Smith, AR--OK",28.713,Ozark city,3.735,residential,false
+site-0323,35.496954,-94.226121,river_valley,050330206023,true,"Fort Smith, AR--OK",0.000,Alma city,1.230,residential,false
+site-0324,35.352668,-94.355992,river_valley,051310011022,true,"Fort Smith, AR--OK",0.000,Fort Smith city,1.402,business,false
+site-0325,35.349015,-94.326424,river_valley,051310013051,true,"Fort Smith, AR--OK",0.000,Fort Smith city,4.032,residential,false
+site-0326,35.817728,-90.765772,northeast,050310008041,false,"Jonesboro, AR",0.563,Jonesboro city,7.824,residential,false
+site-0327,35.781198,-91.657630,northeast,050634902002,true,"Batesville, AR",0.000,Batesville city,3.454,residential,false
+site-0328,35.977336,-90.286560,northeast,050930108014,false,"Paragould, AR",16.942,Leachville city,7.857,residential,false
+site-0329,35.782709,-90.674895,northeast,050310004041,true,"Jonesboro, AR",0.000,Jonesboro city,4.136,business,false
+site-0330,35.913652,-90.561963,northeast,050310011023,false,"Jonesboro, AR",6.040,Brookland city,2.042,residential,false
+site-0331,36.025575,-90.484956,northeast,050554807002,false,"Paragould, AR",0.224,Paragould city,3.753,residential,false
+site-0332,35.834313,-90.691141,northeast,050310001023,true,"Jonesboro, AR",0.000,Jonesboro city,1.952,residential,false
+site-0333,35.802448,-90.751182,northeast,050310008033,true,"Jonesboro, AR",0.000,Jonesboro city,6.785,residential,false
+site-0334,36.100675,-91.154750,northeast,050754702001,false,"Walnut Ridge, AR",14.515,Powhatan town,3.146,residential,false
+site-0335,36.052647,-90.973937,northeast,050754705011,true,"Walnut Ridge, AR",0.000,Hoxie city,1.847,residential,false
+site-0336,34.994330,-90.825480,northeast,051239606004,false,"Forrest City, AR",0.710,Forrest City city,3.637,residential,false
+site-0337,35.669768,-90.529771,northeast,051114904001,true,"Trumann, AR",0.000,Trumann city,0.879,residential,false
+site-0338,35.404780,-91.589235,northeast,051450701002,false,"Searcy, AR",13.425,Russell town,8.612,residential,false
+site-0339,35.940475,-89.906299,northeast,050930106013,true,"Blytheville, AR",0.000,Blytheville city,0.720,residential,false
+site-0340,35.963709,-91.591100,northeast,051354704021,false,"Batesville, AR",16.493,Cave City city,4.350,residential,false
+site-0341,35.787682,-90.690225,northeast,050310008052,true,"Jonesboro, AR",0.000,Jonesboro city,3.706,residential,false
+site-0342,35.819573,-90.664866,northeast,050310004033,true,"Jonesboro, AR",0.000,Jonesboro city,1.278,residential,false
+site-0343,36.188304,-91.350450,northeast,050754702003,false,"Pocahontas, AR",31.653,Williford town,7.121,residential,false
+site-0344,35.705336,-89.969628,northeast,050930110003,true,"Osceola, AR",0.000,Osceola city,2.480,residential,false
+site-0345,35.749372,-91.602174,northeast,050634905001,false,"Batesville, AR",0.443,Batesville city,2.824,residential,false
+site-0346,36.060592,-90.477926,northeast,050554805022,true,"Paragould, AR",0.000,Paragould city,3.068,residential,false
+site-0347,35.618010,-91.265772,northeast,050674802003,true,"Newport, AR",0.000,Newport city,3.147,residential,false
+site-0348,35.314283,-90.716505,northeast,050379502003,false,"Wynne, AR",8.298,Vanndale CDP,4.956,government,true
+site-0349,35.902090,-90.783675,northeast,050310012004,false,"Jonesboro, AR",4.589,Bono city,1.841,business,false
+site-0350,35.809028,-90.743955,northeast,050310008042,true,"Jonesboro, AR",0.000,Jonesboro city,5.974,residential,false
+site-0351,36.273737,-90.309705,northeast,050219505002,false,"Paragould, AR",23.663,Rector city,1.800,residential,false
+site-0352,35.971673,-89.997224,northeast,050930106021,false,"Blytheville, AR",1.466,Gosnell city,2.685,residential,false
+site-0353,35.793779,-90.696567,northeast,050310008053,true,"Jonesboro, AR",0.000,Jonesboro city,3.293,residential,false
+site-0354,35.993222,-89.938139,northeast,050930106021,false,"Blytheville, AR",1.049,Gosnell city,4.171,residential,false
+site-0355,36.492988,-91.375514,northeast,051219602011,false,"Pocahontas, AR",39.797,Mammoth Spring city,14.799,residential,false
+site-0356,35.933462,-89.850616,northeast,050930107004,false,"Blytheville, AR",0.391,Armorel CDP,4.822,residential,false
+site-0357,35.820148,-90.744725,northeast,050310008042,true,"Jonesboro, AR",0.000,Jonesboro city,5.923,residential,false
+site-0358,36.076260,-90.565377,northeast,050554804011,false,"Paragould, AR",0.322,Paragould city,5.609,residential,false
+site-0359,36.045697,-90.634346,northeast,050554806013,false,"Paragould, AR",5.129,Walcott CDP,3.251,residential,false
+site-0360,35.781179,-90.662782,northeast,050310004012,true,"Jonesboro, AR",0.000,Jonesboro city,4.533,business,false
+site-0361,36.118778,-90.517041,northeast,050554802002,false,"Paragould, AR",2.538,Oak Grove Heights town,1.489,library,false
+site-0362,35.897179,-90.663491,northeast,050310006011,false,"Jonesboro, AR",1.330,Brookland city,8.272,residential,false
+site-0363,36.175956,-90.390256,northeast,050554801002,false,"Paragould, AR",10.571,Marmaduke city,1.633,business,false
+site-0364,35.798394,-90.757335,northeast,050310008033,true,"Jonesboro, AR",0.000,Jonesboro city,7.450,residential,false
+site-0365,36.041645,-91.001102,northeast,050754705013,false,"Walnut Ridge, AR",1.356,Hoxie city,2.551,residential,false
+site-0366,35.757432,-91.614373,northeast,050634905001,false,"Batesville, AR",0.130,Batesville city,1.447,school,false
+site-0367,34.753299,-90.757116,northeast,050774703002,false,"Helena-West Helena, AR",21.933,Marianna city,2.452,government,true
+site-0368,35.677292,-90.540996,northeast,051114904001,true,"Trumann, AR",0.000,Trumann city,1.364,business,false
+site-0369,36.245630,-90.468351,northeast,050554802001,false,"Paragould, AR",16.711,Lafe town,5.179,residential,false
+site-0370,35.932511,-89.883997,northeast,050930102002,true,"Blytheville, AR",0.000,Blytheville city,1.911,residential,false
+site-0371,35.872714,-90.668425,northeast,050310006012,false,"Jonesboro, AR",0.689,Jonesboro city,5.966,residential,false
+site-0372,35.825824,-90.735860,northeast,050310003004,true,"Jonesboro, AR",0.000,Jonesboro city,5.168,residential,false
+site-0373,36.043150,-90.503554,northeast,050554808021,true,"Paragould, AR",0.000,Paragould city,1.191,residential,false
+site-0374,35.403133,-90.498512,northeast,050350307012,false,"Trumann, AR",28.042,Earle city,14.758,residential,false
+site-0375,35.157111,-90.097094,northeast,050350308061,false,"Memphis, TN--MS--AR",2.365,West Memphis city,9.327,residential,false
+site-0376,35.409779,-91.430303,northeast,051450701003,false,"Searcy, AR",22.944,Bradford city,2.637,business,false
+site-0377,35.824196,-90.726070,northeast,050310003005,true,"Jonesboro, AR",0.000,Jonesboro city,4.270,business,false
+site-0378,35.800668,-90.676849,northeast,050310004032,true,"Jonesboro, AR",0.000,Jonesboro city,2.131,residential,false
+site-0379,35.401715,-91.614002,northeast,051450701002,false,"Searcy, AR",12.520,Russell town,10.410,residential,false
+site-0380,36.123030,-91.077854,northeast,050754702004,false,"Walnut Ridge, AR",9.913,Black Rock city,3.251,business,false
+site-0381,36.021550,-90.533522,northeast,050554808022,false,"Paragould, AR",0.894,Paragould city,3.997,residential,false
+site-0382,35.967423,-89.945945,northeast,050930114003,true,"Blytheville, AR",0.000,Gosnell city,2.055,residential,false
+site-0383,35.808204,-90.709332,northeast,050310003001,true,"Jonesboro, AR",0.000,Jonesboro city,3.019,business,false
+site-0384,35.785483,-91.652657,northeast,050634902002,false,"Batesville, AR",0.158,Batesville city,3.296,residential,false
+site-0385,35.818872,-90.769684,northeast,050310008041,false,"Jonesboro, AR",0.554,Jonesboro city,8.174,business,false
+site-0386,35.151553,-90.172127,northeast,050350301022,true,"Memphis, TN--MS--AR",0.000,West Memphis city,2.477,residential,false
+site-0387,35.162757,-90.199970,northeast,050350302012,true,"Memphis, TN--MS--AR",0.000,West Memphis city,1.470,residential,false
+site-0388,36.008226,-91.067583,northeast,050754704001,false,"Walnut Ridge, AR",7.565,Minturn town,5.071,residential,false
+site-0389,35.290049,-90.569817,northeast,050379501001,false,"Wynne, AR",18.337,Parkin city,3.536,residential,false
+site-0390,35.851057,-90.632740,northeast,050310005013,true,"Jonesboro, AR",0.000,Jonesboro city,5.434,residential,false
+site-0391,36.045388,-90.557879,northeast,050554808012,false,"Paragould, AR",0.266,Paragould city,4.331,residential,false
+site-0392,35.434915,-91.346388,northeast,051474902001,false,"Newport, AR",18.696,Bradford city,9.966,residential,false
+site-0393,35.939559,-89.912244,northeast,050930106014,true,"Blytheville, AR",0.000,Blytheville city,0.885,residential,false
+site-0394,35.783065,-90.527547,northeast,050310009002,false,"Jonesboro, AR",7.205,Bay city,4.675,business,false
+site-0395,35.149080,-90.152141,northeast,050350301011,true,"Memphis, TN--MS--AR",0.000,West Memphis city,4.285,residential,false
+site-0396,34.987297,-90.986807,northeast,051239603003,false,"Forrest City, AR",15.326,Goodwin CDP,5.399,business,false
+site-0397,35.825674,-90.715976,northeast,050310003006,true,"Jonesboro, AR",0.000,Jonesboro city,3.395,government,true
+site-0398,36.159754,-91.410903,northeast,051354703002,false,"Pocahontas, AR",37.708,Williford town,11.194,business,false
+site-0399,35.769045,-91.527630,northeast,050634903005,false,"Batesville, AR",3.857,Sulphur Rock town,3.139,residential,false
+site-0400,35.589167,-90.694620,northeast,051114905012,false,"Jonesboro, AR",15.399,Harrisburg city,3.733,residential,false
+site-0401,36.155709,-91.034719,northeast,051219601005,false,"Walnut Ridge, AR",9.538,Portia town,8.526,business,false
+site-0402,35.814843,-90.703412,northeast,050310003001,true,"Jonesboro, AR",0.000,Jonesboro city,2.265,residential,false
+site-0403,34.750878,-91.092556,northeast,050774702002,false,"Forrest City, AR",36.909,Monroe CDP,2.278,residential,false
+site-0404,35.600765,-91.268384,northeast,050674802005,true,"Newport, AR",0.000,Newport city,4.190,school,false
+site-0405,35.924594,-89.895782,northeast,050930102004,true,"Blytheville, AR",0.000,Blytheville city,1.348,business,false
+site-0406,35.204933,-90.212923,northeast,050350308051,true,"Memphis, TN--MS--AR",0.000,Marion city,0.569,residential,false
+site-0407,36.465615,-90.369916,northeast,050219502001,false,"Paragould, AR",42.027,McDougal town,3.738,business,false
+site-0408,35.601097,-90.332522,northeast,051114901005,false,"Trumann, AR",15.193,Lepanto city,0.827,residential,false
+site-0409,35.223361,-90.216073,northeast,050350307021,false,"Memphis, TN--MS--AR",0.440,Sunset town,0.950,residential,false
+site-0410,35.545037,-91.750963,northeast,050634908003,false,"Heber Springs, AR",22.143,Floral CDP,4.935,residential,false
+site-0411,34.320236,-92.144210,southeast,050690003025,false,"Pine Bluff, AR",0.565,White Hall city,6.412,public_safety,true
+site-0412,34.191731,-92.041753,southeast,050690015011,true,"Pine Bluff, AR",0.000,Pine Bluff city,3.135,business,false
+site-0413,34.414573,-90.601038,southeast,051074806002,false,"Helena-West Helena, AR",9.729,Helena-West Helena city,13.099,residential,false
+site-0414,33.166569,-91.957166,southeast,050039605001,false,"Crossett, AR",0.159,North Crossett CDP,2.511,residential,false
+site-0415,34.479929,-91.564195,southeast,050014805001,true,"Stuttgart, AR",0.000,Stuttgart city,2.220,residential,false
+site-0416,34.232297,-92.100620,southeast,050690003013,false,"Pine Bluff, AR",0.711,White Hall city,4.768,business,false
+site-0417,33.802475,-92.412363,southeast,050399703005,false,"Warren, AR",34.472,Fordyce city,1.801,residential,false
+site-0418,34.008340,-92.194614,southeast,050259701002,false,"Pine Bluff, AR",21.634,Rison city,5.381,residential,false
+site-0419,34.480565,-91.576716,southeast,050014805003,false,"Stuttgart, AR",0.347,Stuttgart city,3.047,residential,false
+site-0420,33.257841,-91.853102,southeast,050039603002,false,"Crossett, AR",10.533,Hamburg city,6.365,residential,false
+site-0421,33.248571,-92.658407,southeast,051399506003,true,"El Dorado, AR",0.000,El Dorado city,3.332,residential,false
+site-0422,34.199433,-91.982330,southeast,050690019032,true,"Pine Bluff, AR",0.000,Pine Bluff city,3.510,residential,false
+site-0423,34.623614,-90.677579,southeast,051074801001,false,"Helena-West Helena, AR",6.080,LaGrange town,6.334,residential,false
+site-0424,34.285854,-92.561634,southeast,050534703001,false,"Sheridan, AR",12.082,Prattsville town,4.007,residential,false
+site-0425,33.587799,-91.860921,southeast,050434905001,false,"Monticello, AR",3.944,Monticello city,7.459,residential,false
+site-0426,33.279187,-92.637976,southeast,051399502004,false,"El Dorado, AR",1.697,Norphlet city,5.047,business,false
+site-0427,33.538620,-92.843067,southeast,051039505002,true,"Camden, AR",0.000,Camden city,3.278,residential,false
+site-0428,33.714613,-91.532324,southeast,050434901003,false,"Dumas, AR",17.027,Tillar city,7.458,residential,false
+site-0429,34.219584,-91.944530,southeast,050690019011,false,"Pine Bluff, AR",1.407,Pine Bluff city,6.773,residential,false
+site-0430,33.929187,-92.061767,southeast,050259702004,false,"Pine Bluff, AR",24.526,Woodlawn CDP,4.445,residential,false
+site-0431,33.823854,-92.098310,southeast,050259702004,false,"Warren, AR",20.985,Rye CDP,12.316,residential,false
+site-0432,33.616286,-91.799839,southeast,050434903003,true,"Monticello, AR",0.000,Monticello city,1.101,business,false
+site-0433,34.558861,-90.656433,southeast,051074803005,false,"Helena-West Helena, AR",0.100,Helena-West Helena city,4.525,public_safety,true
+site-0434,34.185739,-92.066853,southeast,050690021042,false,"Pine Bluff, AR",0.036,Pine Bluff city,5.368,residential,false
+site-0435,33.634368,-91.785610,southeast,050434902003,true,"Monticello, AR",0.000,Monticello city,1.304,residential,false
+site-0436,33.244720,-92.674158,southeast,051399507001,true,"El Dorado, AR",0.000,El Dorado city,3.012,business,false
+site-0437,34.173656,-92.087726,southeast,050690021042,false,"Pine Bluff, AR",1.123,Sulphur Springs CDP,4.086,school,false
+site-0438,33.171126,-91.978965,southeast,050039606002,false,"Crossett, AR",1.579,West Crossett CDP,4.371,residential,false
+site-0439,34.299477,-90.862816,southeast,051074806001,false,"Helena-West Helena, AR",30.968,Elaine city,1.336,residential,false
+site-0440,34.199065,-92.024907,southeast,050690015022,true,"Pine Bluff, AR",0.000,Pine Bluff city,1.548,residential,false
+site-0441,33.847969,-91.982160,southeast,050259702004,false,"Warren, AR",24.583,Rye CDP,10.945,public_safety,true
+site-0442,34.496885,-91.548630,southeast,050014805002,true,"Stuttgart, AR",0.000,Stuttgart city,0.184,business,false
+site-0443,34.166858,-92.085436,southeast,050690021042,false,"Pine Bluff, AR",1.672,Sulphur Springs CDP,4.319,residential,false
+site-0444,33.329803,-91.971162,southeast,050039602001,false,"Crossett, AR",16.421,Fountain Hill town,11.568,residential,false
+site-0445,33.202109,-92.654970,southeast,051399510005,true,"El Dorado, AR",0.000,El Dorado city,2.058,residential,false
+site-0446,33.117835,-91.286448,southeast,050170804001,false,"Crossett, AR",58.657,Eudora city,2.091,residential,false
+site-0447,33.578100,-92.715456,southeast,051039501011,false,"Camden, AR",7.721,East Camden town,4.312,residential,false
+site-0448,34.693740,-90.804312,southeast,050774704002,false,"Helena-West Helena, AR",17.990,Rondo town,4.309,residential,false
+site-0449,33.641496,-92.043347,southeast,050119501001,false,"Warren, AR",1.855,Warren city,3.997,residential,false
+site-0450,34.308138,-92.420485,southeast,050534704021,true,"Sheridan, AR",0.000,Sheridan city,2.556,residential,false
+site-0451,34.202098,-92.125708,southeast,050690021032,false,"Pine Bluff, AR",3.101,Sulphur Springs CDP,3.458,residential,false
+site-0452,33.033326,-91.155176,southeast,050170804003,false,"Crossett, AR",72.240,Eudora city,13.905,residential,false
+site-0453,34.140153,-92.017832,southeast,050690020002,false,"Pine Bluff, AR",0.651,Pine Bluff city,7.944,residential,false
+site-0454,33.649502,-91.863749,southeast,050434905001,false,"Monticello, AR",3.429,Wilmar city,6.594,residential,false
+site-0455,33.034384,-91.203560,southeast,050170804003,false,"Crossett, AR",67.838,Eudora city,10.954,residential,false
+site-0456,34.152271,-91.447277,southeast,050014808001,false,"Dumas, AR",27.463,Gillett city,7.272,residential,false
+site-0457,33.592224,-91.749498,southeast,050434904001,false,"Monticello, AR",2.159,Monticello city,5.466,residential,false
+site-0458,34.485342,-91.001131,southeast,051074802022,false,"Helena-West Helena, AR",28.669,Marvell city,11.137,business,false
+site-0459,34.545789,-90.623191,southeast,051074801003,true,"Helena-West Helena, AR",0.000,Helena-West Helena city,1.634,residential,false
+site-0460,34.178700,-92.023571,southeast,050690018003,false,"Pine Bluff, AR",0.073,Pine Bluff city,3.699,residential,false
+site-0461,34.312338,-91.321474,southeast,050014807002,false,"Stuttgart, AR",26.175,DeWitt city,3.179,residential,false
+site-0462,34.206011,-92.018979,southeast,050690016004,true,"Pine Bluff, AR",0.000,Pine Bluff city,0.634,residential,false
+site-0463,34.758840,-91.408423,southeast,051174603003,false,"Stuttgart, AR",29.080,De Valls Bluff city,5.671,residential,false
+site-0464,33.459177,-93.942217,southwest,050910209021,false,"Hope, AR",36.071,Texarkana city,4.879,business,false
+site-0465,33.768995,-94.156074,southwest,050810303022,false,"De Queen, AR",33.217,Wilton city,3.448,public_safety,true
+site-0466,34.135933,-94.334014,southwest,051330801001,false,"De Queen, AR",8.391,Gillham town,4.119,residential,false
+site-0467,33.394822,-93.998740,southwest,050910208023,false,"Hope, AR",44.684,Texarkana city,4.741,residential,false
+site-0468,33.243854,-93.157613,southwest,050279501002,false,"Magnolia, AR",2.319,Magnolia city,7.353,residential,false
+site-0469,33.452669,-94.042628,southwest,050910201003,false,"Hope, AR",44.107,Texarkana city,5.461,residential,false
+site-0470,33.270142,-93.239218,southwest,050279504022,true,"Magnolia, AR",0.000,Magnolia city,1.409,residential,false
+site-0471,34.034008,-94.338962,southwest,051330803002,true,"De Queen, AR",0.000,De Queen city,0.961,public_safety,true
+site-0472,34.001220,-94.354175,southwest,051330802001,false,"De Queen, AR",2.898,De Queen city,4.695,residential,false
+site-0473,33.936216,-93.533816,southwest,050574801022,false,"Hope, AR",27.170,Blevins city,8.304,residential,false
+site-0474,33.974878,-93.965270,southwest,050619502001,false,"De Queen, AR",32.938,Center Point CDP,6.465,business,false
+site-0475,33.041769,-93.854363,southwest,050910210014,false,"Magnolia, AR",59.750,Bradley city,19.510,business,false
+site-0476,33.417801,-94.014594,southwest,050910205002,false,"Hope, AR",44.184,Texarkana city,3.279,residential,false
+site-0477,33.654340,-93.577351,southwest,050574803022,true,"Hope, AR",0.000,Hope city,1.871,residential,false
+site-0478,33.358239,-93.467096,southwest,050734701013,false,"Magnolia, AR",20.506,Stamps city,2.882,residential,false
+site-0479,33.488824,-93.929076,southwest,050910209012,false,"Hope, AR",33.122,Texarkana city,7.940,business,false
+site-0480,33.679753,-94.128568,southwest,050810301042,false,"De Queen, AR",43.270,Ashdown city,0.608,business,false
+site-0481,33.121532,-93.543248,southwest,050734702004,false,"Magnolia, AR",30.053,Taylor city,7.958,residential,false
+site-0482,34.046465,-94.376100,southwest,051330803001,false,"De Queen, AR",0.222,De Queen city,3.165,residential,false
+site-0483,33.277156,-93.218562,southwest,050279504011,true,"Magnolia, AR",0.000,Magnolia city,0.716,residential,false
+site-0484,33.421187,-94.005238,southwest,050910206002,false,"Hope, AR",43.269,Texarkana city,2.380,residential,false
+site-0485,33.652144,-93.593907,southwest,050574805003,true,"Hope, AR",0.000,Hope city,1.841,residential,false
+site-0486,33.388479,-93.638790,southwest,050734701021,false,"Hope, AR",27.879,Lewisville city,5.987,business,false
+site-0487,34.108906,-94.034316,southwest,050619501003,false,"De Queen, AR",26.640,Dierks city,1.992,residential,false
+site-0488,33.280944,-93.233901,southwest,050279504011,true,"Magnolia, AR",0.000,Magnolia city,0.854,residential,false
+site-0489,33.816900,-93.398646,southwest,050990902002,false,"Hope, AR",21.153,Prescott city,1.559,residential,false
+site-0490,33.119928,-93.775255,southwest,050734702002,false,"Magnolia, AR",49.680,Bradley city,11.242,residential,false
+site-0491,33.661789,-93.599377,southwest,050574805003,true,"Hope, AR",0.000,Hope city,1.202,residential,false
+site-0492,34.169371,-94.225724,southwest,051330801002,false,"De Queen, AR",15.134,Gillham town,8.028,residential,false
+site-0493,33.353256,-93.923196,southwest,050910209023,false,"Hope, AR",43.146,Genoa CDP,4.648,residential,false
+site-0494,33.962745,-93.839859,southwest,050619503001,false,"Hope, AR",36.708,Nashville city,2.558,residential,false
+site-0495,33.681955,-94.093577,southwest,050810301042,false,"Hope, AR",42.358,Ashdown city,3.168,business,false
+site-0496,33.717304,-93.235295,southwest,050990901002,false,"Hope, AR",30.119,Cale town,9.945,public_safety,true
+site-0497,33.614594,-93.272320,southwest,050990901002,false,"Hope, AR",25.713,Rosston town,3.250,residential,false
+site-0498,33.526853,-92.820155,southwest,051039505001,true,"Camden, AR",0.000,Camden city,5.271,residential,false
+site-0499,33.483639,-93.465987,southwest,050990903002,false,"Hope, AR",18.924,Patmos town,9.857,residential,false
+site-0500,33.552508,-93.464311,southwest,050990903002,false,"Hope, AR",12.409,Bodcaw town,6.719,residential,false
+site-0501,33.583988,-93.731700,southwest,050574804001,false,"Hope, AR",12.231,Fulton town,8.241,residential,false
+site-0502,33.397717,-93.478901,southwest,050734701011,false,"Magnolia, AR",23.301,Stamps city,5.071,residential,false
+site-0503,33.659672,-93.587771,southwest,050574803021,true,"Hope, AR",0.000,Hope city,0.950,library,false
+site-0504,34.139329,-93.806651,ouachita,051099534002,false,"De Queen, AR",47.726,Newhope CDP,11.286,library,false
+site-0505,34.529872,-93.052310,ouachita,050510107002,true,"Hot Springs, AR",0.000,Hot Springs city,4.500,government,false
+site-0506,35.286605,-93.123997,ouachita,051159513022,true,"Russellville, AR",0.000,Russellville city,1.760,residential,false
+site-0507,34.362907,-92.811889,ouachita,050590204001,true,"Malvern, AR",0.000,Malvern city,1.465,residential,false
+site-0508,34.131827,-93.064560,ouachita,050199536014,true,"Arkadelphia, AR",0.000,Arkadelphia city,0.761,residential,false
+site-0509,35.241284,-93.247947,ouachita,051499524021,false,"Russellville, AR",5.215,Dardanelle city,7.635,residential,false
+site-0510,34.656451,-93.055910,ouachita,050510120021,true,"Hot Springs Village, AR",0.000,Hot Springs Village CDP,7.984,residential,false
+site-0511,34.525425,-93.182248,ouachita,050510103012,true,"Hot Springs, AR",0.000,Piney CDP,4.275,residential,false
+site-0512,34.106100,-93.049749,ouachita,050199538003,false,"Arkadelphia, AR",0.680,Arkadelphia city,3.061,residential,false
+site-0513,34.444266,-92.810872,ouachita,050590201011,false,"Malvern, AR",4.947,Magnet Cove CDP,2.521,residential,false
+site-0514,35.278966,-93.123307,ouachita,051159513023,true,"Russellville, AR",0.000,Russellville city,1.432,residential,false
+site-0515,35.363667,-93.278119,ouachita,051159508002,false,"Russellville, AR",10.198,London city,5.094,residential,false
+site-0516,34.037326,-92.902095,ouachita,050199539011,false,"Arkadelphia, AR",15.797,Sparkman city,14.198,hospital,true
+site-0517,35.348782,-93.271210,ouachita,051159508001,false,"Russellville, AR",8.548,London city,3.446,residential,false
+site-0518,35.283323,-93.169732,ouachita,051159515032,true,"Russellville, AR",0.000,Russellville city,2.919,residential,false
+site-0519,34.309805,-93.232540,ouachita,050590207012,false,"Hot Springs, AR",14.679,Bismarck CDP,5.172,residential,false
+site-0520,34.454552,-93.121210,ouachita,050510112011,true,"Hot Springs, AR",0.000,Rockwell CDP,1.589,residential,false
+site-0521,33.842610,-93.127794,ouachita,050199539021,false,"Arkadelphia, AR",28.267,Whelen Springs town,1.065,residential,false
+site-0522,34.462721,-93.043020,ouachita,050510116022,true,"Hot Springs, AR",0.000,Hot Springs city,3.044,residential,false
+site-0523,34.385867,-93.401495,ouachita,050590207011,false,"Hot Springs, AR",18.026,Pearcy CDP,11.764,residential,false
+site-0524,34.601484,-92.992056,ouachita,050510104011,false,"Hot Springs Village, AR",4.012,Hot Springs Village CDP,6.647,residential,false
+site-0525,34.423903,-93.584012,ouachita,050979532001,false,"Hot Springs, AR",33.500,Caddo Gap CDP,3.914,residential,false
+site-0526,35.285665,-93.105218,ouachita,051159513011,true,"Russellville, AR",0.000,Russellville city,3.215,residential,false
+site-0527,34.566091,-92.783705,ouachita,051250105081,false,"Hot Springs Village, AR",8.601,Lonsdale town,3.401,residential,false
+site-0528,34.180626,-93.695732,ouachita,051099534002,false,"Hot Springs, AR",52.605,Daisy town,7.334,business,false
+site-0529,34.316711,-93.110138,ouachita,050590207022,false,"Hot Springs, AR",9.457,Bismarck CDP,6.271,residential,false
+site-0530,35.292248,-93.124079,ouachita,051159513021,true,"Russellville, AR",0.000,Russellville city,2.215,business,false
+site-0531,35.271105,-93.138300,ouachita,051159515042,true,"Russellville, AR",0.000,Russellville city,0.582,business,false
+site-0532,34.448313,-93.120275,ouachita,050510112011,true,"Hot Springs, AR",0.000,Rockwell CDP,2.173,residential,false
+site-0533,34.146121,-93.326106,ouachita,050199537003,false,"Arkadelphia, AR",21.073,Alpine CDP,10.184,hospital,true
+site-0534,35.319657,-93.157741,ouachita,051159514002,false,"Russellville, AR",1.903,Russellville city,5.117,hospital,true
+site-0535,35.067666,-93.708326,ouachita,051499525001,false,"Clarksville, AR",46.894,Blue Mountain town,7.171,business,false
+site-0536,34.354947,-92.793588,ouachita,050590204002,true,"Malvern, AR",0.000,Perla town,1.931,residential,false
+site-0537,34.053991,-93.201136,ouachita,050199537004,false,"Arkadelphia, AR",11.443,Gum Springs town,9.775,residential,false
+site-0538,33.582685,-92.857963,ouachita,051039504002,true,"Camden, AR",0.000,Camden city,1.862,residential,false
+site-0539,34.485413,-92.665117,ouachita,051250105141,false,"Little Rock, AR",8.149,Haskell city,3.400,residential,false
+site-0540,34.305039,-92.736541,ouachita,050590205001,false,"Malvern, AR",6.224,Perla town,7.574,business,false
+site-0541,34.488161,-93.030864,ouachita,050510116013,true,"Hot Springs, AR",0.000,Hot Springs city,1.783,library,false
+site-0542,35.120265,-93.281576,ouachita,051499524022,false,"Russellville, AR",14.270,Centerville CDP,10.028,residential,false
+site-0543,34.477933,-93.061734,ouachita,050510113004,true,"Hot Springs, AR",0.000,Hot Springs city,1.657,residential,false
+site-0544,35.314392,-93.132253,ouachita,051159513032,true,"Russellville, AR",0.000,Russellville city,4.273,residential,false
+site-0545,34.075078,-93.540396,ouachita,051099535002,false,"Arkadelphia, AR",40.684,Delight city,5.947,residential,false
+site-0546,34.123124,-93.083414,ouachita,050199536013,true,"Arkadelphia, AR",0.000,Arkadelphia city,1.249,residential,false
+site-0547,34.669248,-92.843847,ouachita,051250105172,false,"Hot Springs Village, AR",1.931,Fountain Lake town,9.585,residential,false
+site-0548,34.203518,-92.834556,ouachita,050590205003,false,"Malvern, AR",15.571,Donaldson town,8.559,residential,false
+site-0549,34.469693,-93.894758,ouachita,050979532003,false,"Mena, AR",27.055,Black Springs town,16.723,business,false
+site-0550,34.485200,-93.215100,ouachita,050510111021,false,"Hot Springs, AR",2.748,Piney CDP,6.770,residential,false
+site-0551,34.487673,-93.139686,ouachita,050510110012,true,"Hot Springs, AR",0.000,Piney CDP,1.750,residential,false
+site-0552,34.821690,-93.080087,ouachita,051059529001,false,"Hot Springs Village, AR",15.352,Aplin CDP,18.548,residential,false
+site-0553,35.276580,-93.153137,ouachita,051159515041,true,"Russellville, AR",0.000,Russellville city,1.307,residential,false
+site-0554,34.363969,-92.837155,ouachita,050590202004,false,"Malvern, AR",0.145,Malvern city,1.809,residential,false
+site-0555,34.395822,-93.847576,ouachita,050979532003,false,"Mena, AR",34.275,Black Springs town,14.030,residential,false
+site-0556,34.155342,-93.064426,ouachita,050199536022,false,"Arkadelphia, AR",0.144,Arkadelphia city,3.165,residential,false
+site-0557,35.268353,-93.134558,ouachita,051159515042,true,"Russellville, AR",0.000,Russellville city,0.965,residential,false
+site-0558,34.509212,-93.044501,ouachita,050510106023,true,"Hot Springs, AR",0.000,Hot Springs city,2.261,business,false
+site-0559,35.825070,-92.529165,ozarks,051299703002,false,"Mountain Home, AR",50.158,Leslie city,2.466,residential,false
+site-0560,36.289076,-91.533005,ozarks,051354702023,false,"Pocahontas, AR",46.917,Highland city,2.484,residential,false
+site-0561,35.899952,-92.104945,ozarks,051379502042,false,"Batesville, AR",40.571,Mountain View city,4.290,hospital,true
+site-0562,35.713430,-92.431541,ozarks,051414601001,false,"Heber Springs, AR",37.014,Dennard CDP,11.360,residential,false
+site-0563,36.344533,-92.360946,ozarks,050059502002,true,"Mountain Home, AR",0.000,Mountain Home city,2.329,residential,false
+site-0564,36.348547,-92.020610,ozarks,050495502022,false,"Mountain Home, AR",24.462,Viola town,6.390,residential,false
+site-0565,35.869176,-92.289735,ozarks,051379501002,false,"Heber Springs, AR",43.261,Fox CDP,9.469,residential,false
+site-0566,36.293919,-92.468340,ozarks,050059509004,false,"Mountain Home, AR",0.027,Gassville city,1.934,residential,false
+site-0567,36.341604,-91.776867,ozarks,050495502012,false,"Mountain Home, AR",46.096,Salem city,5.137,library,false
+site-0568,36.370294,-92.516849,ozarks,050059508013,false,"Mountain Home, AR",7.241,Lakeview city,2.000,business,false
+site-0569,36.296274,-92.513638,ozarks,050059509003,false,"Mountain Home, AR",1.038,Cotter city,1.723,residential,false
+site-0570,35.992880,-91.774760,ozarks,050659604001,false,"Batesville, AR",23.237,Mount Pleasant town,1.296,residential,false
+site-0571,36.347301,-92.407727,ozarks,050059504001,true,"Mountain Home, AR",0.000,Mountain Home city,2.513,residential,false
+site-0572,36.255754,-92.574142,ozarks,050899602021,false,"Mountain Home, AR",5.948,Flippin city,2.962,library,false
+site-0573,35.894294,-92.192038,ozarks,051379502043,false,"Heber Springs, AR",42.474,Mountain View city,8.267,residential,false
+site-0574,36.239086,-92.673034,ozarks,050899602012,false,"Mountain Home, AR",14.920,Yellville city,1.635,residential,false
+site-0575,36.457695,-91.648352,ozarks,050495501011,false,"Mountain Home, AR",58.002,Mammoth Spring city,10.340,school,false
+site-0576,36.281513,-91.516612,ozarks,051354702023,false,"Pocahontas, AR",45.465,Highland city,1.374,residential,false
+site-0577,35.663831,-91.708029,ozarks,050634907011,false,"Batesville, AR",11.857,Desha CDP,7.681,residential,false
+site-0578,36.207331,-92.459986,ozarks,050059505001,false,"Mountain Home, AR",8.020,Buffalo City CDP,4.682,business,false
+site-0579,36.162435,-93.131943,ozarks,050097904001,false,"Harrison, AR",4.069,Bellefonte town,8.683,hospital,true
+site-0580,36.216071,-93.100793,ozarks,050097906004,true,"Harrison, AR",0.000,Harrison city,3.314,residential,false
+site-0581,36.453979,-92.207645,ozarks,050059507003,false,"Mountain Home, AR",10.367,Gamaliel CDP,2.629,residential,false
+site-0582,36.023796,-91.907544,ozarks,050659602002,false,"Batesville, AR",32.657,Melbourne city,5.043,school,false
+site-0583,36.033583,-92.507117,ozarks,051299702004,false,"Mountain Home, AR",26.755,Big Flat town,9.339,residential,false
+site-0584,36.058142,-93.183505,ozarks,051011801001,false,"Harrison, AR",16.556,Jasper city,5.132,residential,false
+site-0585,36.401777,-92.508284,ozarks,050059508013,false,"Mountain Home, AR",7.798,Midway CDP,3.117,residential,false
+site-0586,36.306619,-92.660166,ozarks,050899602023,false,"Mountain Home, AR",13.738,Summit city,6.555,residential,false
+site-0587,36.359856,-92.361047,ozarks,050059503001,false,"Mountain Home, AR",0.240,Mountain Home city,3.446,business,false
+site-0588,36.237345,-91.761794,ozarks,050659601002,false,"Batesville, AR",49.234,Horseshoe Bend city,2.953,residential,false
+site-0589,36.237779,-93.131742,ozarks,050097905011,true,"Harrison, AR",0.000,Harrison city,1.372,residential,false
+site-0590,35.838362,-92.035298,ozarks,051379502011,false,"Batesville, AR",33.121,Mountain View city,7.181,residential,false
+site-0591,36.260148,-92.323830,ozarks,050059506001,false,"Mountain Home, AR",5.961,Briarcliff city,3.966,residential,false
+site-0592,36.134427,-92.918787,ozarks,050097903003,false,"Harrison, AR",12.631,Everton town,2.344,hospital,true
+site-0593,36.406501,-92.166255,ozarks,050059507003,false,"Mountain Home, AR",11.688,Henderson CDP,5.729,school,false
+site-0594,36.280608,-92.672855,ozarks,050899602013,false,"Mountain Home, AR",14.417,Summit city,3.448,government,false
+site-0595,36.497011,-91.567970,ozarks,050495501022,false,"Pocahontas, AR",54.965,Mammoth Spring city,2.459,residential,false
+site-0596,36.135476,-91.755022,ozarks,050659601003,false,"Batesville, AR",37.957,Franklin town,4.345,business,false
+site-0597,36.119100,-92.149851,ozarks,050659603001,false,"Mountain Home, AR",27.682,Calico Rock city,2.174,residential,false
+site-0598,35.734796,-92.199058,ozarks,051379501004,false,"Heber Springs, AR",26.265,Fox CDP,10.619,residential,false
+site-0599,36.254067,-92.276951,ozarks,050059505003,false,"Mountain Home, AR",8.852,Salesville city,1.669,business,false
+site-0600,36.341507,-93.183787,ozarks,050097901003,false,"Harrison, AR",7.707,Batavia CDP,10.801,residential,false

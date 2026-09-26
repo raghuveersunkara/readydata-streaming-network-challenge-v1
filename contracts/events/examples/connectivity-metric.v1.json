@@ -1,0 +1,15 @@
+{
+  "device_id": "device-0001",
+  "device_session_id": "56e9c2e2-fb32-5a89-b7fd-55a3ca31ab27",
+  "event_id": "d3d89459-cc1b-5bb0-91ef-42e0e6c748ad",
+  "event_timestamp": "2026-08-19T14:32:10.125Z",
+  "event_type": "connectivity_metric",
+  "payload": {
+    "jitter_ms": 2.104,
+    "latency_ms": 14.217,
+    "packet_loss_pct": 0.0312
+  },
+  "schema_version": 1,
+  "sequence_number": 42,
+  "site_id": "site-0001"
+}

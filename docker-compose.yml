@@ -1,0 +1,387 @@
+# LOCAL DEVELOPMENT ONLY: this challenge uses intentionally stable development
+# defaults so candidates can start the environment without provisioning secrets.
+# These credentials and unauthenticated services are not representative of a
+# production deployment; production must use generated secrets, a secret
+# manager, authentication, authorization, encryption, and restricted networking.
+
+name: readydata-streaming-challenge
+
+x-airflow-common: &airflow-common
+  build:
+    context: .
+    dockerfile: solution/airflow/Dockerfile
+  image: readydata-airflow:3.3.0
+  user: "${AIRFLOW_UID:-50000}:0"
+  environment: &airflow-common-environment
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__CORE__PARALLELISM: "4"
+    AIRFLOW__CORE__AUTH_MANAGER: airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__CORE__EXECUTION_API_SERVER_URL: http://airflow-api-server:8080/execution/
+    AIRFLOW__CORE__FERNET_KEY: "${AIRFLOW_FERNET_KEY:-MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY=}"
+    AIRFLOW__API_AUTH__JWT_SECRET: "${AIRFLOW_JWT_SECRET:-local-development-jwt-secret-change-me}"
+    AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: "postgresql+psycopg2://airflow:${AIRFLOW_DB_PASSWORD:-airflow}@metadata-db:5432/airflow"
+    READYDATA_SQL_ROOT: /opt/airflow/sql
+    READYDATA_EXPORT_ROOT: /opt/airflow/exports
+    READYDATA_REFERENCE_ROOT: /opt/airflow/reference-data
+    READYDATA_REFERENCE_VERSION: v1
+    READYDATA_TRINO_HOST: trino
+    READYDATA_TRINO_PORT: "8080"
+    READYDATA_TRINO_USER: readydata
+    READYDATA_TRINO_CATALOG: iceberg
+    READYDATA_TRINO_SCHEMA: solution
+    READYDATA_EXPORT_FETCH_SIZE: "1000"
+  volumes:
+    - ./solution/airflow/dags:/opt/airflow/dags:ro
+    - ./solution/sql:/opt/airflow/sql:ro
+    - ./reference-data:/opt/airflow/reference-data:ro
+    - ./solution/exports:/opt/airflow/exports
+    - airflow-logs:/opt/airflow/logs
+  networks:
+    - challenge
+
+services:
+  metadata-db:
+    image: postgres:16.14-alpine
+    environment:
+      POSTGRES_USER: challenge_admin
+      POSTGRES_PASSWORD: "${POSTGRES_ADMIN_PASSWORD:-challenge_admin}"
+      POSTGRES_DB: postgres
+      AIRFLOW_DB_PASSWORD: "${AIRFLOW_DB_PASSWORD:-airflow}"
+      NESSIE_DB_PASSWORD: "${NESSIE_DB_PASSWORD:-nessie}"
+    volumes:
+      - metadata-db-data:/var/lib/postgresql/data
+      - ./infrastructure/postgres/init-databases.sh:/docker-entrypoint-initdb.d/01-create-databases.sh:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U challenge_admin -d postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+    restart: unless-stopped
+    networks:
+      - challenge
+
+  kafka:
+    image: apache/kafka:4.3.1
+    ports:
+      - "127.0.0.1:${KAFKA_PORT:-9092}:9092"
+    environment:
+      CLUSTER_ID: MkU3OEVBNTcwNTJENDM2Qk
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: INTERNAL://:29092,CONTROLLER://:29093,EXTERNAL://:9092
+      KAFKA_ADVERTISED_LISTENERS: INTERNAL://kafka:29092,EXTERNAL://localhost:${KAFKA_PORT:-9092}
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL:PLAINTEXT,CONTROLLER:PLAINTEXT,EXTERNAL:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:29093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_SHARE_COORDINATOR_STATE_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_SHARE_COORDINATOR_STATE_TOPIC_MIN_ISR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+    volumes:
+      - kafka-data:/var/lib/kafka/data
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:29092 --list >/dev/null 2>&1"]
+      interval: 5s
+      timeout: 10s
+      retries: 20
+      start_period: 20s
+    restart: unless-stopped
+    networks:
+      - challenge
+
+  kafka-init:
+    image: apache/kafka:4.3.1
+    depends_on:
+      kafka:
+        condition: service_healthy
+    command:
+      - /bin/bash
+      - -ec
+      - |
+        for topic in network.connectivity network.throughput network.device_health network.state network.infrastructure
+        do
+          /opt/kafka/bin/kafka-topics.sh --bootstrap-server kafka:29092 --create --if-not-exists --topic "$${topic}" --partitions 3 --replication-factor 1
+          /opt/kafka/bin/kafka-configs.sh --bootstrap-server kafka:29092 --alter --entity-type topics --entity-name "$${topic}" --add-config retention.ms=7200000,segment.ms=900000
+        done
+    restart: "no"
+    networks:
+      - challenge
+
+  mosquitto:
+    image: eclipse-mosquitto:2.1.2-alpine
+    ports:
+      - "127.0.0.1:${MQTT_PORT:-1883}:1883"
+    volumes:
+      - ./infrastructure/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+    healthcheck:
+      test: ["CMD-SHELL", "mosquitto_sub -h 127.0.0.1 -p 1883 -t '$$SYS/broker/version' -C 1 -W 5 >/dev/null 2>&1"]
+      interval: 5s
+      timeout: 7s
+      retries: 12
+      start_period: 5s
+    restart: unless-stopped
+    networks:
+      - challenge
+
+  garage:
+    image: dxflrs/garage:v2.3.0
+    command: ["/garage", "server", "--single-node", "--default-bucket"]
+    environment:
+      GARAGE_DEFAULT_ACCESS_KEY: "${S3_ACCESS_KEY:-GK0123456789abcdef0123456789abcdef}"
+      GARAGE_DEFAULT_SECRET_KEY: "${S3_SECRET_KEY:-0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef}"
+      GARAGE_DEFAULT_BUCKET: "${S3_WAREHOUSE_BUCKET:-warehouse}"
+    ports:
+      - "127.0.0.1:${S3_PORT:-3900}:3900"
+    volumes:
+      - ./infrastructure/garage/garage.toml:/etc/garage.toml:ro
+      - garage-data:/var/lib/garage
+    healthcheck:
+      test: ["CMD", "/garage", "status"]
+      interval: 5s
+      timeout: 10s
+      retries: 20
+      start_period: 15s
+    restart: unless-stopped
+    networks:
+      - challenge
+
+  nessie:
+    image: ghcr.io/projectnessie/nessie:0.108.4
+    depends_on:
+      metadata-db:
+        condition: service_healthy
+      garage:
+        condition: service_healthy
+    environment:
+      NESSIE_VERSION_STORE_TYPE: JDBC2
+      NESSIE_VERSION_STORE_PERSIST_JDBC_DATASOURCE: postgresql
+      QUARKUS_DATASOURCE_POSTGRESQL_JDBC_URL: jdbc:postgresql://metadata-db:5432/nessie
+      QUARKUS_DATASOURCE_POSTGRESQL_USERNAME: nessie
+      QUARKUS_DATASOURCE_POSTGRESQL_PASSWORD: "${NESSIE_DB_PASSWORD:-nessie}"
+      NESSIE_CATALOG_DEFAULT_WAREHOUSE: warehouse
+      NESSIE_CATALOG_WAREHOUSES_WAREHOUSE_LOCATION: "s3://${S3_WAREHOUSE_BUCKET:-warehouse}"
+      NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_REGION: "${S3_REGION:-garage}"
+      NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_ENDPOINT: http://garage:3900
+      NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_PATH_STYLE_ACCESS: "true"
+      NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_CHUNKED_ENCODING_ENABLED: "false"
+      NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_ACCESS_KEY: urn:nessie-secret:quarkus:garage-credentials
+      JAVA_OPTS_APPEND: >-
+        -Dgarage-credentials.name=${S3_ACCESS_KEY:-GK0123456789abcdef0123456789abcdef}
+        -Dgarage-credentials.secret=${S3_SECRET_KEY:-0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef}
+    ports:
+      - "127.0.0.1:${NESSIE_PORT:-19120}:19120"
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail --silent http://localhost:9000/q/health/ready >/dev/null"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+    restart: unless-stopped
+    networks:
+      - challenge
+
+  trino:
+    image: trinodb/trino:483
+    depends_on:
+      garage:
+        condition: service_healthy
+      nessie:
+        condition: service_healthy
+    environment:
+      S3_ACCESS_KEY: "${S3_ACCESS_KEY:-GK0123456789abcdef0123456789abcdef}"
+      S3_SECRET_KEY: "${S3_SECRET_KEY:-0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef}"
+      S3_REGION: "${S3_REGION:-garage}"
+    ports:
+      - "127.0.0.1:${TRINO_PORT:-8080}:8080"
+    volumes:
+      - ./infrastructure/trino/catalog/iceberg.properties:/etc/trino/catalog/iceberg.properties:ro
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail --silent http://localhost:8080/v1/info >/dev/null"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+    restart: unless-stopped
+    networks:
+      - challenge
+
+  s3-client:
+    image: amazon/aws-cli:2.36.25
+    profiles: ["tools"]
+    depends_on:
+      garage:
+        condition: service_healthy
+    environment:
+      AWS_ACCESS_KEY_ID: "${S3_ACCESS_KEY:-GK0123456789abcdef0123456789abcdef}"
+      AWS_SECRET_ACCESS_KEY: "${S3_SECRET_KEY:-0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef}"
+      AWS_DEFAULT_REGION: "${S3_REGION:-garage}"
+      AWS_ENDPOINT_URL: http://garage:3900
+      AWS_EC2_METADATA_DISABLED: "true"
+      AWS_PAGER: ""
+    volumes:
+      - ./infrastructure/garage/aws-config:/root/.aws/config:ro
+    networks:
+      - challenge
+
+  nessie-gc:
+    image: ghcr.io/projectnessie/nessie-gc:0.108.4
+    profiles: ["tools"]
+    depends_on:
+      garage:
+        condition: service_healthy
+      nessie:
+        condition: service_healthy
+    environment:
+      AWS_ACCESS_KEY_ID: "${S3_ACCESS_KEY:-GK0123456789abcdef0123456789abcdef}"
+      AWS_SECRET_ACCESS_KEY: "${S3_SECRET_KEY:-0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef}"
+      AWS_REGION: "${S3_REGION:-garage}"
+      AWS_EC2_METADATA_DISABLED: "true"
+    networks:
+      - challenge
+
+  simulator:
+    build:
+      context: ./generator/simulator
+    image: readydata-network-simulator:v1
+    depends_on:
+      mosquitto:
+        condition: service_healthy
+      mqtt-kafka-bridge:
+        condition: service_healthy
+    environment:
+      MQTT_HOST: mosquitto
+      MQTT_PORT: "1883"
+      SIMULATOR_SEED: "${SIMULATOR_SEED:-20250401}"
+      EVENT_RATE_MULTIPLIER: "${EVENT_RATE_MULTIPLIER:-1}"
+    volumes:
+      - ./generator/simulator:/app:ro
+      - ./reference-data:/reference-data:ro
+    healthcheck:
+      test: ["CMD-SHELL", "test -f /tmp/simulator-ready && kill -0 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+    stop_grace_period: 10s
+    restart: unless-stopped
+    networks:
+      - challenge
+
+  mqtt-kafka-bridge:
+    build:
+      context: ./generator/mqtt-kafka-bridge
+    image: readydata-mqtt-kafka-bridge:v1
+    depends_on:
+      mosquitto:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+      kafka-init:
+        condition: service_completed_successfully
+    environment:
+      MQTT_HOST: mosquitto
+      MQTT_PORT: "1883"
+      KAFKA_BOOTSTRAP_SERVERS: "${KAFKA_BOOTSTRAP_SERVERS:-kafka:29092}"
+    volumes:
+      - ./generator/mqtt-kafka-bridge:/app:ro
+    healthcheck:
+      test: ["CMD-SHELL", "test -f /tmp/mqtt-kafka-bridge-ready && kill -0 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 15s
+    stop_grace_period: 10s
+    restart: unless-stopped
+    networks:
+      - challenge
+
+  airflow-init:
+    <<: *airflow-common
+    user: "0:0"
+    depends_on:
+      metadata-db:
+        condition: service_healthy
+    environment:
+      <<: *airflow-common-environment
+      _AIRFLOW_DB_MIGRATE: "true"
+      _AIRFLOW_WWW_USER_CREATE: "true"
+      _AIRFLOW_WWW_USER_USERNAME: "${AIRFLOW_ADMIN_USER:-airflow}"
+      _AIRFLOW_WWW_USER_PASSWORD: "${AIRFLOW_ADMIN_PASSWORD:-airflow}"
+    entrypoint: /bin/bash
+    command:
+      - -ec
+      - |
+        mkdir -p /opt/airflow/logs
+        mkdir -p /opt/airflow/exports
+        chown -R "${AIRFLOW_UID:-50000}:0" /opt/airflow/logs
+        chown -R "${AIRFLOW_UID:-50000}:0" /opt/airflow/exports
+        exec /entrypoint airflow version
+    restart: "no"
+
+  airflow-api-server:
+    <<: *airflow-common
+    command: api-server
+    depends_on:
+      metadata-db:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    ports:
+      - "127.0.0.1:${AIRFLOW_PORT:-8081}:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/api/v2/monitor/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+      start_period: 30s
+    restart: unless-stopped
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    depends_on:
+      metadata-db:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD-SHELL", "airflow jobs check --job-type SchedulerJob --hostname $${HOSTNAME}"]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+      start_period: 30s
+    restart: unless-stopped
+
+  airflow-dag-processor:
+    <<: *airflow-common
+    command: dag-processor
+    depends_on:
+      metadata-db:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD-SHELL", "airflow jobs check --job-type DagProcessorJob --hostname $${HOSTNAME}"]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+      start_period: 30s
+    restart: unless-stopped
+
+networks:
+  challenge:
+    driver: bridge
+
+volumes:
+  airflow-logs:
+  garage-data:
+  kafka-data:
+  metadata-db-data:

@@ -1,0 +1,90 @@
+{
+  "census_reference": {
+    "census_vintage": "2020",
+    "reference_version": "v1",
+    "state_fips": "05"
+  },
+  "counts": {
+    "access_devices": 600,
+    "dependencies": 650,
+    "devices": 654,
+    "infrastructure_devices": 54,
+    "network_sites": 23,
+    "service_sites": 600,
+    "sites": 623
+  },
+  "distributions": {
+    "critical_sites": 24,
+    "provider_technology": {
+      "BS&S|coax": 30,
+      "BS&S|fiber": 65,
+      "BS&S|fixed_wireless": 20,
+      "BS&S|satellite": 5,
+      "CableTwo|coax": 65,
+      "CableTwo|fiber": 35,
+      "CableTwo|fixed_wireless": 15,
+      "CableTwo|satellite": 5,
+      "MeVerse|coax": 25,
+      "MeVerse|fiber": 50,
+      "MeVerse|fixed_wireless": 40,
+      "MeVerse|satellite": 5,
+      "MoonLink|coax": 15,
+      "MoonLink|fiber": 35,
+      "MoonLink|fixed_wireless": 30,
+      "MoonLink|satellite": 40,
+      "Zfinity|coax": 45,
+      "Zfinity|fiber": 55,
+      "Zfinity|fixed_wireless": 15,
+      "Zfinity|satellite": 5
+    },
+    "providers": {
+      "BS&S": 120,
+      "CableTwo": 120,
+      "MeVerse": 120,
+      "MoonLink": 120,
+      "Zfinity": 120
+    },
+    "regions": {
+      "central": 157,
+      "northeast": 85,
+      "northwest": 111,
+      "ouachita": 55,
+      "ozarks": 42,
+      "river_valley": 57,
+      "southeast": 53,
+      "southwest": 40
+    },
+    "sampling_modes": {
+      "population": 480,
+      "uniform": 120
+    },
+    "site_types": {
+      "business": 90,
+      "government": 12,
+      "hospital": 10,
+      "library": 10,
+      "public_safety": 8,
+      "residential": 450,
+      "school": 20
+    },
+    "technologies": {
+      "coax": 180,
+      "fiber": 240,
+      "fixed_wireless": 120,
+      "satellite": 60
+    }
+  },
+  "inventory_version": "v1",
+  "manifest_version": 1,
+  "outputs": {
+    "device_dependencies.csv": {
+      "sha256": "ee4784994f50d697c9a8d314fb58d9591836d23afeed5a660500e661d888dafe"
+    },
+    "devices.csv": {
+      "sha256": "a2eea46b8bd1faa3a4ce96f1d91382b5838ae8ba906206cfa575122f3e232ee7"
+    },
+    "sites.csv": {
+      "sha256": "af28e028be0c64be817ea874fbe9dfeb4c85e6183cf9806af543ae9d4f777de7"
+    }
+  }
+}

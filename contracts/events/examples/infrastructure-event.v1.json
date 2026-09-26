@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "event_id": "d936af8a-3ae7-58de-90c0-32ec781b141c",
+  "event_type": "infrastructure_event",
+  "event_timestamp": "2026-08-20T14:34:00.000Z",
+  "device_session_id": "d9f75aee-3512-54f3-b7be-c57df380a9f3",
+  "sequence_number": 1,
+  "site_id": "network-site-agg-central-01",
+  "device_id": "agg-central-bs_and_s",
+  "payload": {
+    "incident_id": "6d546951-d6e2-5d8e-90d6-68c4616b019c",
+    "event_kind": "congestion_started",
+    "severity": "warning"
+  }
+}

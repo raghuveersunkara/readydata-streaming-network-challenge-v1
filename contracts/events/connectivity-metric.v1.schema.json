@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "connectivity-metric.v1.schema.json",
+  "title": "Connectivity metric event V1",
+  "allOf": [
+    {
+      "$ref": "common-envelope.v1.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "event_type": {
+          "const": "connectivity_metric"
+        },
+        "site_id": {
+          "type": "string",
+          "pattern": "^site-[0-9]{4}$"
+        },
+        "device_id": {
+          "type": "string",
+          "pattern": "^device-[0-9]{4}$"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "latency_ms",
+            "jitter_ms",
+            "packet_loss_pct"
+          ],
+          "properties": {
+            "latency_ms": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 60000,
+              "description": "Round-trip latency in milliseconds."
+            },
+            "jitter_ms": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 60000,
+              "description": "Latency variation in milliseconds."
+            },
+            "packet_loss_pct": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100,
+              "description": "Packet loss as a percentage, not a fraction."
+            }
+          }
+        }
+      }
+    }
+  ]
+}

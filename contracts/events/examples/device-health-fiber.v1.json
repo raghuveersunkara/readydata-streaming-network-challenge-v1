@@ -1,0 +1,16 @@
+{
+  "device_id": "device-0001",
+  "device_session_id": "56e9c2e2-fb32-5a89-b7fd-55a3ca31ab27",
+  "event_id": "88b2bc78-bdb9-59ce-8cb4-9ff9863fce6b",
+  "event_timestamp": "2026-08-19T14:32:10.125Z",
+  "event_type": "device_health",
+  "payload": {
+    "cpu_pct": 34.2,
+    "memory_pct": 51.8,
+    "optical_rx_power_dbm": -18.7,
+    "temperature_c": 47.6
+  },
+  "schema_version": 1,
+  "sequence_number": 15,
+  "site_id": "site-0001"
+}

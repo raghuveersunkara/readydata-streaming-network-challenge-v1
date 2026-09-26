@@ -1,0 +1,14 @@
+{
+  "device_id": "device-0001",
+  "device_session_id": "56e9c2e2-fb32-5a89-b7fd-55a3ca31ab27",
+  "event_id": "282753dd-51d5-56ec-8132-e6d9d82dde8d",
+  "event_timestamp": "2026-08-19T14:32:10.125Z",
+  "event_type": "throughput_test",
+  "payload": {
+    "download_mbps": 742.18,
+    "upload_mbps": 691.42
+  },
+  "schema_version": 1,
+  "sequence_number": 7,
+  "site_id": "site-0001"
+}

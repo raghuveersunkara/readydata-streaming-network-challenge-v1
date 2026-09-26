@@ -1,0 +1,15 @@
+{
+  "device_id": "ixp-central-01",
+  "device_session_id": "0fc41584-0fcf-561d-af75-b711ab8b2f36",
+  "event_id": "dc28a519-f0eb-567c-a72e-310e7a2fd59f",
+  "event_timestamp": "2026-08-19T14:32:10.125Z",
+  "event_type": "device_health",
+  "payload": {
+    "cpu_pct": 48.3,
+    "memory_pct": 64.7,
+    "temperature_c": 55.2
+  },
+  "schema_version": 1,
+  "sequence_number": 15,
+  "site_id": "network-site-ixp-central"
+}

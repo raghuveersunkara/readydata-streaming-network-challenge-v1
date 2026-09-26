@@ -1,0 +1,4 @@
+# Candidate-owned Compose overlay. Add solution services and overrides here.
+# Keeping this valid empty overlay allows the supplied infrastructure to start
+# before implementation begins.
+services: {}

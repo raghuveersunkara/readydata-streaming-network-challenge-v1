@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "throughput-test.v1.schema.json",
+  "title": "Throughput test event V1",
+  "allOf": [
+    {
+      "$ref": "common-envelope.v1.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "event_type": {
+          "const": "throughput_test"
+        },
+        "site_id": {
+          "type": "string",
+          "pattern": "^site-[0-9]{4}$"
+        },
+        "device_id": {
+          "type": "string",
+          "pattern": "^device-[0-9]{4}$"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "download_mbps",
+            "upload_mbps"
+          ],
+          "properties": {
+            "download_mbps": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 100000,
+              "description": "Measured download throughput in megabits per second."
+            },
+            "upload_mbps": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 100000,
+              "description": "Measured upload throughput in megabits per second."
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+[default]
+region = garage
+output = json
+s3 =
+    addressing_style = path
+    multipart_threshold = 5MB
+    multipart_chunksize = 5MB

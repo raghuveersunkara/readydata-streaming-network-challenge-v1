@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "infrastructure-event.v1.schema.json",
+  "title": "Infrastructure event V1",
+  "allOf": [
+    {
+      "$ref": "common-envelope.v1.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "event_type": {
+          "const": "infrastructure_event"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["incident_id", "event_kind", "severity"],
+          "properties": {
+            "incident_id": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "event_kind": {
+              "enum": [
+                "congestion_started",
+                "outage_started",
+                "recovery_started",
+                "recovered"
+              ]
+            },
+            "severity": {
+              "enum": ["info", "warning", "critical"]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "event_id": "f64a9854-105c-55f0-922b-ae003310617b",
+  "event_type": "connectivity_state",
+  "event_timestamp": "2026-08-20T14:34:00.000Z",
+  "device_session_id": "56e9c2e2-fb32-5a89-b7fd-55a3ca31ab27",
+  "sequence_number": 1,
+  "site_id": "site-0001",
+  "device_id": "device-0001",
+  "payload": {
+    "previous_state": "online",
+    "new_state": "degraded",
+    "reason": "upstream_congestion"
+  }
+}

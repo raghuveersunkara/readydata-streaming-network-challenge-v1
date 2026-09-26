@@ -1,0 +1,61 @@
+{
+  "config_version": 1,
+  "routes_version": 1,
+  "routes": [
+    {
+      "mqtt_subscription": "network/+/+/connectivity",
+      "mqtt_qos": 1,
+      "kafka_topic": "network.connectivity",
+      "key_topic_segment_index": 2
+    },
+    {
+      "mqtt_subscription": "network/+/+/throughput",
+      "mqtt_qos": 1,
+      "kafka_topic": "network.throughput",
+      "key_topic_segment_index": 2
+    },
+    {
+      "mqtt_subscription": "network/+/+/health",
+      "mqtt_qos": 1,
+      "kafka_topic": "network.device_health",
+      "key_topic_segment_index": 2
+    },
+    {
+      "mqtt_subscription": "network/+/+/state",
+      "mqtt_qos": 1,
+      "kafka_topic": "network.state",
+      "key_topic_segment_index": 2
+    },
+    {
+      "mqtt_subscription": "network/+/+/infrastructure",
+      "mqtt_qos": 1,
+      "kafka_topic": "network.infrastructure",
+      "key_topic_segment_index": 2
+    }
+  ],
+  "mqtt": {
+    "client_id": "readydata-mqtt-kafka-bridge-v1",
+    "clean_session": false,
+    "keepalive_seconds": 30,
+    "reconnect_min_seconds": 1,
+    "reconnect_max_seconds": 30
+  },
+  "kafka": {
+    "client_id": "readydata-mqtt-kafka-bridge-v1",
+    "acks": "all",
+    "enable_idempotence": true,
+    "linger_ms": 5,
+    "delivery_timeout_ms": 30000,
+    "queue_buffering_max_messages": 10000
+  },
+  "runtime": {
+    "max_outstanding_messages": 2000,
+    "poll_interval_seconds": 0.05,
+    "kafka_healthcheck_interval_seconds": 2,
+    "kafka_healthcheck_timeout_seconds": 2,
+    "shutdown_flush_seconds": 5
+  },
+  "logging": {
+    "summary_interval_seconds": 30
+  }
+}

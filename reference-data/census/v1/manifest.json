@@ -1,0 +1,71 @@
+{
+  "census_vintage": "2020",
+  "counts": {
+    "arkansas_places": 626,
+    "block_groups": 2294,
+    "nonzero_population_block_groups": 2293,
+    "population": 3011524,
+    "state_features": 1,
+    "urban_areas_intersecting_arkansas": 47
+  },
+  "manifest_version": 1,
+  "outputs": {
+    "arkansas_block_groups.geojson": {
+      "sha256": "b2f26e5a2ff553cace3002ebc2f68e63be25bdf68c3c13444553eae3effd66a5"
+    },
+    "arkansas_boundary.geojson": {
+      "sha256": "68ad3260bdae830621a862ff4e1a85025ad7e34461494f932611f3faf654e33d"
+    },
+    "arkansas_urban_areas.geojson": {
+      "sha256": "47021e8d26614930f498db083d99326a359151d943875ab0a24ead3a0544b844"
+    },
+    "census_block_groups.csv": {
+      "sha256": "50f6b9ee48d1e3ee32592cef30559a01c6f8081638535126eb39a137400497d2"
+    },
+    "census_places.csv": {
+      "sha256": "329306532ac125c5fdf2cf828a8d5ec020fb67dd3ae748b196cf57bc43bdf7eb"
+    }
+  },
+  "reference_version": "v1",
+  "source_snapshot_date": "2026-08-18",
+  "sources": [
+    {
+      "filename": "cb_2020_05_bg_500k.zip",
+      "id": "arkansas_block_groups",
+      "sha256": "b48174e9e58d9cb9d234d0eadbac109b7ff62a63e59d43ae7383ce6bb6fe2d0c",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_05_bg_500k.zip"
+    },
+    {
+      "filename": "cb_2020_us_state_500k.zip",
+      "id": "states",
+      "sha256": "dcc877984a3e4d59c1ee8d068b6681517c545e0c1827b7e78a7c2c7cbb167da6",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_state_500k.zip"
+    },
+    {
+      "filename": "cb_2020_us_ua20_500k.zip",
+      "id": "urban_areas",
+      "sha256": "3637e86feb2b1b37b7a67eaff16dcc9ef17f779e9be513279831906fc195035d",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_ua20_500k.zip"
+    },
+    {
+      "filename": "2020_Gaz_place_national.zip",
+      "id": "places",
+      "sha256": "6e5745b3e1adf7a1e024a988301d484697e2a0f25b3cf10114eef676f09d5c18",
+      "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2020_Gazetteer/2020_Gaz_place_national.zip"
+    },
+    {
+      "filename": "ar2020.pl.zip",
+      "id": "arkansas_population",
+      "sha256": "940ad2916676e443dfdab98c3e145fcf62ef9dcd9f10c763ccdb195f4d5f132e",
+      "url": "https://www2.census.gov/programs-surveys/decennial/2020/data/01-Redistricting_File--PL_94-171/Arkansas/ar2020.pl.zip"
+    }
+  ],
+  "state_fips": "05",
+  "transform": {
+    "coordinate_precision_degrees": 1e-06,
+    "coordinate_reference_system": "EPSG:4326",
+    "population_field": "P1 total population from the PL geographic header",
+    "square_meters_per_square_mile": 2589988.110336,
+    "urban_area_delineation": "original 2020"
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "config_version": 3,
+  "schema_version": 1,
+  "inventory_version": "v1",
+  "default_seed": 20250401,
+  "event_families": {
+    "connectivity_metric": {
+      "enabled": true,
+      "topic_template": "network/{site_id}/{device_id}/connectivity",
+      "base_interval_seconds": 5.0,
+      "population": "subscriber_edge"
+    },
+    "throughput_test": {
+      "enabled": true,
+      "topic_template": "network/{site_id}/{device_id}/throughput",
+      "base_interval_seconds": 60.0,
+      "population": "subscriber_edge"
+    },
+    "device_health": {
+      "enabled": true,
+      "topic_template": "network/{site_id}/{device_id}/health",
+      "base_interval_seconds": 30.0,
+      "population": "all"
+    }
+  },
+  "control_event_families": {
+    "connectivity_state": {
+      "enabled": true,
+      "topic_template": "network/{site_id}/{device_id}/state"
+    },
+    "infrastructure_event": {
+      "enabled": true,
+      "topic_template": "network/{site_id}/{device_id}/infrastructure"
+    }
+  },
+  "rate_multiplier": {
+    "default": 1.0,
+    "minimum": 0.1,
+    "maximum": 10.0
+  },
+  "scheduling": {
+    "lateness_tolerance_fraction": 0.1
+  },
+  "data_quality": {
+    "anomaly_rates": {
+      "duplicate": 0.0025,
+      "sequence_gap": 0.001,
+      "out_of_order": 0.001,
+      "late_arrival": 0.0005,
+      "poison": 0.0002
+    },
+    "late_arrival": {
+      "minimum_delay_seconds": 90.0,
+      "cadence_multiplier": 2.0
+    },
+    "max_pending_records": 4096,
+    "poison_strategy": "truncate_final_byte"
+  },
+  "metric_precision": {
+    "latency_ms": 3,
+    "jitter_ms": 3,
+    "packet_loss_pct": 4,
+    "download_mbps": 2,
+    "upload_mbps": 2,
+    "health": 2
+  },
+  "geography": {
+    "density_weight": 0.55,
+    "urban_proximity_weight": 0.45,
+    "urban_distance_scale_km": 40.0,
+    "latency_multiplier": [0.9, 1.2],
+    "jitter_multiplier": [0.9, 1.2],
+    "packet_loss_multiplier": [0.9, 1.1],
+    "throughput_multiplier": [0.9, 1.1]
+  },
+  "variation": {
+    "device_multiplier": [0.9, 1.1],
+    "latency_measurement_multiplier": [0.92, 1.08],
+    "jitter_measurement_multiplier": [0.85, 1.15],
+    "throughput_measurement_multiplier": [0.95, 1.05],
+    "health_device_multiplier": [0.9, 1.1],
+    "health_measurement_multiplier": [0.95, 1.05]
+  },
+  "health": {
+    "common_ranges": {
+      "cpu_pct": [1.0, 95.0],
+      "memory_pct": [5.0, 95.0],
+      "temperature_c": [15.0, 90.0]
+    },
+    "role_baselines": {
+      "subscriber_edge": {"cpu_pct": 30.0, "memory_pct": 45.0, "temperature_c": 44.0},
+      "aggregation": {"cpu_pct": 42.0, "memory_pct": 58.0, "temperature_c": 51.0},
+      "backhaul": {"cpu_pct": 48.0, "memory_pct": 62.0, "temperature_c": 54.0},
+      "ixp": {"cpu_pct": 52.0, "memory_pct": 66.0, "temperature_c": 56.0}
+    }
+  },
+  "technologies": {
+    "fiber": {
+      "latency_baseline_ms": 12.0,
+      "latency_range_ms": [5.0, 30.0],
+      "jitter_baseline_ms": 1.0,
+      "jitter_range_ms": [0.1, 5.0],
+      "nonzero_packet_loss_probability": 0.05,
+      "packet_loss_cap_pct": 0.25,
+      "download_efficiency": [0.82, 0.98],
+      "upload_efficiency": [0.82, 0.98],
+      "health_signal_field": "optical_rx_power_dbm",
+      "health_signal_baseline": -19.0,
+      "health_signal_range": [-28.0, -8.0],
+      "health_signal_variation": [-1.5, 1.5]
+    },
+    "coax": {
+      "latency_baseline_ms": 20.0,
+      "latency_range_ms": [8.0, 45.0],
+      "jitter_baseline_ms": 2.5,
+      "jitter_range_ms": [0.25, 10.0],
+      "nonzero_packet_loss_probability": 0.1,
+      "packet_loss_cap_pct": 0.5,
+      "download_efficiency": [0.72, 0.94],
+      "upload_efficiency": [0.68, 0.9],
+      "health_signal_field": "snr_db",
+      "health_signal_baseline": 38.0,
+      "health_signal_range": [28.0, 46.0],
+      "health_signal_variation": [-2.0, 2.0]
+    },
+    "fixed_wireless": {
+      "latency_baseline_ms": 40.0,
+      "latency_range_ms": [15.0, 90.0],
+      "jitter_baseline_ms": 6.0,
+      "jitter_range_ms": [0.5, 25.0],
+      "nonzero_packet_loss_probability": 0.2,
+      "packet_loss_cap_pct": 1.0,
+      "download_efficiency": [0.62, 0.9],
+      "upload_efficiency": [0.6, 0.88],
+      "health_signal_field": "signal_strength_dbm",
+      "health_signal_baseline": -70.0,
+      "health_signal_range": [-100.0, -45.0],
+      "health_signal_variation": [-6.0, 6.0]
+    },
+    "satellite": {
+      "latency_baseline_ms": 600.0,
+      "latency_range_ms": [400.0, 900.0],
+      "jitter_baseline_ms": 30.0,
+      "jitter_range_ms": [5.0, 80.0],
+      "nonzero_packet_loss_probability": 0.3,
+      "packet_loss_cap_pct": 2.0,
+      "download_efficiency": [0.5, 0.82],
+      "upload_efficiency": [0.55, 0.85],
+      "health_signal_field": "signal_quality_pct",
+      "health_signal_baseline": 72.0,
+      "health_signal_range": [35.0, 100.0],
+      "health_signal_variation": [-10.0, 10.0]
+    }
+  },
+  "scenarios": {
+    "selection": {
+      "geographic_cluster_size": 40,
+      "provider_technology_minimum_size": 25,
+      "peer_group_minimum_size": 24,
+      "minimum_anchor_separation_km": 150.0
+    },
+    "peer_outlier": {
+      "latency_multiplier": 3.0,
+      "jitter_multiplier": 2.5,
+      "packet_loss_add_pct": 1.0,
+      "download_multiplier": 0.45,
+      "upload_multiplier": 0.45
+    },
+    "degraded_geographic": {
+      "latency_add_ms": 50.0,
+      "jitter_add_ms": 5.0,
+      "packet_loss_add_pct": 1.5,
+      "download_multiplier": 0.6,
+      "upload_multiplier": 0.6
+    },
+    "high_performing_geographic": {
+      "latency_multiplier": 0.8,
+      "jitter_multiplier": 0.75,
+      "packet_loss_multiplier": 0.5,
+      "download_multiplier": 1.08,
+      "upload_multiplier": 1.08
+    },
+    "provider_technology": {
+      "upload_multiplier": 0.5,
+      "health_signal_adverse_fraction": 0.35
+    },
+    "shared_incident": {
+      "phase_durations_seconds": {
+        "healthy_warmup": 120.0,
+        "congested": 120.0,
+        "offline": 60.0,
+        "recovering": 60.0,
+        "healthy": 240.0
+      },
+      "latency_add_ms": 80.0,
+      "jitter_add_ms": 15.0,
+      "packet_loss_add_pct": 3.0,
+      "throughput_multiplier": 0.35,
+      "recovery_effect_fraction": 0.5,
+      "infrastructure_health_adverse_fraction": 0.65,
+      "max_control_queue_records": 256
+    }
+  },
+  "mqtt": {
+    "qos": 1,
+    "retain": false,
+    "keepalive_seconds": 30,
+    "connect_timeout_seconds": 30,
+    "reconnect_min_seconds": 1,
+    "reconnect_max_seconds": 30,
+    "max_inflight_messages": 1000,
+    "max_queued_messages": 2000,
+    "shutdown_drain_seconds": 5
+  },
+  "logging": {"summary_interval_seconds": 30},
+  "event_uuid_namespace": "a2516fad-216d-51c0-a406-70d911ab2fa6"
+}

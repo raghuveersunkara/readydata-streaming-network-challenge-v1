@@ -1,0 +1,483 @@
+{
+  "archive_root": "readydata-streaming-network-challenge-v1",
+  "file_count": 79,
+  "files": [
+    {
+      "executable": false,
+      "path": ".env.example",
+      "sha256": "61aa838e30c1122b75f11867fab17857193e07818d7779ef137282927acada18",
+      "size_bytes": 1019
+    },
+    {
+      "executable": false,
+      "path": ".gitignore",
+      "sha256": "0a3046047e968112bb9e3dc0e0ef2fc330a8d26e3581b5c6dd628ed1dc162bed",
+      "size_bytes": 408
+    },
+    {
+      "executable": false,
+      "path": "README.md",
+      "sha256": "565890c2f0b8512d9cb353fc4df5ba2fc23d2acda55e8885ae695cc9a8addd49",
+      "size_bytes": 14836
+    },
+    {
+      "executable": false,
+      "path": "TECHNICAL_GUIDE.md",
+      "sha256": "e56c3fddfd228c4beac691b128bdf3057ccff80295440ed48f35307a5299752a",
+      "size_bytes": 10119
+    },
+    {
+      "executable": false,
+      "path": "contracts/README.md",
+      "sha256": "c2beffa00c64a065f3e004bbcdb73cc3e895a2e4067cbd46dfb187e53aeee25c",
+      "size_bytes": 925
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/README.md",
+      "sha256": "7c627dea10fb13db6a87afccc089fbf8c32168c26d2d00c94755cada57a27ac0",
+      "size_bytes": 2328
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/common-envelope.v1.schema.json",
+      "sha256": "05f727076f3685d2678f2b8ce445ffe71b9c9ae92306d4d7caa5c7bbad08b035",
+      "size_bytes": 1201
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/connectivity-metric.v1.schema.json",
+      "sha256": "e70bcad97129415d227be41fc9593940f65e8c88bde264416bd8fd336402bf02",
+      "size_bytes": 1447
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/connectivity-state.v1.schema.json",
+      "sha256": "9d648d94a116e0033cbc9781ec5f171ab06184db95875c9a604eab74e3e04814",
+      "size_bytes": 1203
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/device-health.v1.schema.json",
+      "sha256": "b49f4b0174ebca587124459b4a1a382bd3cc7cb92f6626c6d956c1bb34fae051",
+      "size_bytes": 1558
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/examples/connectivity-metric.v1.json",
+      "sha256": "1b941659e8c2fd44363718b4699d15b0df7a5dfb1863a82170f18e2598af5300",
+      "size_bytes": 412
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/examples/connectivity-state.v1.json",
+      "sha256": "c9c059f10d4bc88bea274f2faf7ecf406f431ff19f0d31af5dc31f813f476c47",
+      "size_bytes": 427
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/examples/device-health-coax.v1.json",
+      "sha256": "2ee77531899f79c19fb9e7cb4108bdf63b963f7ebe720a30a8a990ea653e6b2d",
+      "size_bytes": 417
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/examples/device-health-fiber.v1.json",
+      "sha256": "5fa0169494a9be1e0a3664701178c6dbe4e11b7864593f92cd531a5e084bdf81",
+      "size_bytes": 432
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/examples/device-health-fixed-wireless.v1.json",
+      "sha256": "035a9a0f3d996f2644b46e8d11bb2f243ec70448a24bba1055a063a3a679f07c",
+      "size_bytes": 431
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/examples/device-health-infrastructure.v1.json",
+      "sha256": "acbc94bacd9f33fb9b473c2ed63499c5644d7e528ad319a591f349977ce0cda9",
+      "size_bytes": 415
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/examples/device-health-satellite.v1.json",
+      "sha256": "87042f1595ecf9d9ecadb3a16015b7ed1ef3b2dd5169d87295ea6e6d2ae13828",
+      "size_bytes": 429
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/examples/infrastructure-event.v1.json",
+      "sha256": "d0c7f7d7eb2e7b495d685146570bf38ec4355501ea905bde59ec2bd714bf76b5",
+      "size_bytes": 484
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/examples/throughput-test.v1.json",
+      "sha256": "920810513d525a69a1a03d71e0758ea426f588747a5855566a32e3b073c357e7",
+      "size_bytes": 382
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/infrastructure-event.v1.schema.json",
+      "sha256": "72b5a38f14a34ea428c47df5bb9763e3f36a73db0021d30b92b87003470c1ef6",
+      "size_bytes": 994
+    },
+    {
+      "executable": false,
+      "path": "contracts/events/throughput-test.v1.schema.json",
+      "sha256": "cdc3346f8f562a1ac2928fc8a56023faa1b7dcf04ae11e35a5c15c344afd181f",
+      "size_bytes": 1253
+    },
+    {
+      "executable": false,
+      "path": "docker-compose.yml",
+      "sha256": "b6bcbf0b3b5378c62174ed407344519d142809af2c5f6b3fcb5c1f0537539118",
+      "size_bytes": 13328
+    },
+    {
+      "executable": false,
+      "path": "generator/README.md",
+      "sha256": "6290a261738cb55db71e99e36e8b7c2ed1605db2d933a156ca0563bc0b8c54e6",
+      "size_bytes": 780
+    },
+    {
+      "executable": false,
+      "path": "generator/mqtt-kafka-bridge/Dockerfile",
+      "sha256": "7ff6760bcdfde1791435304edfc4e4c555197b08048d66d2b8c74dd603a34616",
+      "size_bytes": 508
+    },
+    {
+      "executable": false,
+      "path": "generator/mqtt-kafka-bridge/README.md",
+      "sha256": "9d37d8706ed8ec41fe13c362dbb93c66464e560c9cc53f22296d2db5b028bb49",
+      "size_bytes": 2254
+    },
+    {
+      "executable": false,
+      "path": "generator/mqtt-kafka-bridge/bridge/__init__.py",
+      "sha256": "571945eb84e65d165b0b9cc3291e3aebf064398c5ee5f394687972fff3b98c36",
+      "size_bytes": 76
+    },
+    {
+      "executable": false,
+      "path": "generator/mqtt-kafka-bridge/bridge/__main__.py",
+      "sha256": "9fd62c47e806542ee7089694429604b44b3648201ee3555beb0de825f4254286",
+      "size_bytes": 1029
+    },
+    {
+      "executable": false,
+      "path": "generator/mqtt-kafka-bridge/bridge/config.py",
+      "sha256": "b428b8acb3cc8a6efae8a03343862053fd3195cb1bf02c29d775179db4588ea1",
+      "size_bytes": 9568
+    },
+    {
+      "executable": false,
+      "path": "generator/mqtt-kafka-bridge/bridge/routing.py",
+      "sha256": "764fd0764e59d6022890a82a64d44cb9d0b190422e4f11b57a07e56003b8998c",
+      "size_bytes": 1860
+    },
+    {
+      "executable": false,
+      "path": "generator/mqtt-kafka-bridge/bridge/runtime.py",
+      "sha256": "9c9bec185ccd2a193f921597cc4f21eb519aac67a4fcb450e560a40644f7ff93",
+      "size_bytes": 19007
+    },
+    {
+      "executable": false,
+      "path": "generator/mqtt-kafka-bridge/config.json",
+      "sha256": "b0f13cc8401f4233cfc448555fac5cb9eda67859c523fd88ba0aed790adafdc8",
+      "size_bytes": 1567
+    },
+    {
+      "executable": false,
+      "path": "generator/mqtt-kafka-bridge/requirements.lock",
+      "sha256": "002b74a644d4a8947daa0261ff32a810fbc17c7a62e91cb74b7d4ddaad6572ef",
+      "size_bytes": 41
+    },
+    {
+      "executable": false,
+      "path": "generator/simulator/Dockerfile",
+      "sha256": "f70b5dc448dc7829e3a0b43e1b74a1ed53559b6398675fb621d69f665d7a892d",
+      "size_bytes": 523
+    },
+    {
+      "executable": false,
+      "path": "generator/simulator/README.md",
+      "sha256": "731ed49205d601ae43babbec8bc7d6e1b091e23ca4fcdef1d5456315c88b1da7",
+      "size_bytes": 2862
+    },
+    {
+      "executable": false,
+      "path": "generator/simulator/config.json",
+      "sha256": "d5e5bdd2062b9c5e285ff8c680ea86810ae2359d7851a71139eafcf3dba5195a",
+      "size_bytes": 6636
+    },
+    {
+      "executable": false,
+      "path": "generator/simulator/requirements.lock",
+      "sha256": "2c01f67078b97ce3ee826bf6507c98d135831b783dde8f29cfe5dad9c3ae35a2",
+      "size_bytes": 148
+    },
+    {
+      "executable": false,
+      "path": "generator/simulator/simulator/__init__.py",
+      "sha256": "1dfc00ef612e89f16c9a398e32debc770a7af84e742049e963c9cbd723ab32b9",
+      "size_bytes": 82
+    },
+    {
+      "executable": false,
+      "path": "generator/simulator/simulator/__main__.py",
+      "sha256": "87da67b4032867a8181503e9a5bea864ce121d8ad7fd070223bcc27ed4f36bb2",
+      "size_bytes": 2366
+    },
+    {
+      "executable": false,
+      "path": "generator/simulator/simulator/anomalies.py",
+      "sha256": "ff2750cb28dfbdbf9ba985f63d01305ca3793dca65de10ab58e7d19eef0e1770",
+      "size_bytes": 5399
+    },
+    {
+      "executable": false,
+      "path": "generator/simulator/simulator/config.py",
+      "sha256": "343849d8966cc62411d5c837f80512ea7987be51ea63fc142f8f058ba9449356",
+      "size_bytes": 25282
+    },
+    {
+      "executable": false,
+      "path": "generator/simulator/simulator/events.py",
+      "sha256": "865eb542994c64c0d0c6a30d770b724d8e4ae2db6919878f95db6850ed8e578b",
+      "size_bytes": 4644
+    },
+    {
+      "executable": false,
+      "path": "generator/simulator/simulator/metrics.py",
+      "sha256": "5969a3ca3861e921754616f54d87ebb0915ef04bea90fa1758521e952020f451",
+      "size_bytes": 20798
+    },
+    {
+      "executable": false,
+      "path": "generator/simulator/simulator/runtime.py",
+      "sha256": "2968754a0c32501f6c95aca5fd4c74091a09f8779d4786766924aa05ad45def9",
+      "size_bytes": 28073
+    },
+    {
+      "executable": false,
+      "path": "generator/simulator/simulator/scenarios.py",
+      "sha256": "188b6356063fe647e5cc1d2e60c1e22dc5ba412865280bc36cd16b89608d8b75",
+      "size_bytes": 18474
+    },
+    {
+      "executable": false,
+      "path": "infrastructure/README.md",
+      "sha256": "d661690f45cb715f72cedeeb1fc853b6333e6cca88fbe0fee09fda04721c18a3",
+      "size_bytes": 1942
+    },
+    {
+      "executable": false,
+      "path": "infrastructure/airflow/README.md",
+      "sha256": "be59e259c84ad0b03bf1b6ddc37839bd642efc34166f16d3b92664808641d42f",
+      "size_bytes": 995
+    },
+    {
+      "executable": false,
+      "path": "infrastructure/garage/README.md",
+      "sha256": "8d05f88a40bdc6b1fbd2a896a80e02570440212f568705abd016327b162970ae",
+      "size_bytes": 623
+    },
+    {
+      "executable": false,
+      "path": "infrastructure/garage/aws-config",
+      "sha256": "e8c0e18c221f60241c8209477a84b869b6652f438edbda3ab45028fcf4988e6c",
+      "size_bytes": 133
+    },
+    {
+      "executable": false,
+      "path": "infrastructure/garage/garage.toml",
+      "sha256": "3b3774d21ebb4024c89c6262c3a9828ed9c7045d451028357640197e24b61d94",
+      "size_bytes": 512
+    },
+    {
+      "executable": false,
+      "path": "infrastructure/iceberg/README.md",
+      "sha256": "bfa95968b452692e13008f5d32a2beb5172102602523786690af4927cf1f5959",
+      "size_bytes": 600
+    },
+    {
+      "executable": false,
+      "path": "infrastructure/kafka/README.md",
+      "sha256": "7c18c953c85a7e6c04f1ddc36ef0b9737285d83c9adb38aca91020d452567113",
+      "size_bytes": 1266
+    },
+    {
+      "executable": false,
+      "path": "infrastructure/mosquitto/README.md",
+      "sha256": "f3a62d5998c3a347f8e2cf6e6ff05385d5da08a800ed468703984e784e9de189",
+      "size_bytes": 1000
+    },
+    {
+      "executable": false,
+      "path": "infrastructure/mosquitto/mosquitto.conf",
+      "sha256": "61b05ea7f77a1545a9ecc379fedb44a030878dad41c893cf05064c08b2e82ecb",
+      "size_bytes": 218
+    },
+    {
+      "executable": false,
+      "path": "infrastructure/postgres/README.md",
+      "sha256": "8330022f0d5eacb37e9c2149b0f87acfd768cab5679bfd1e6bb5dd95c8f633c1",
+      "size_bytes": 338
+    },
+    {
+      "executable": true,
+      "path": "infrastructure/postgres/init-databases.sh",
+      "sha256": "6414b0d8a3a414869c2a3e13db10f82151d7680f000a41a10ccb512a366c3124",
+      "size_bytes": 870
+    },
+    {
+      "executable": false,
+      "path": "infrastructure/trino/README.md",
+      "sha256": "7056408f4385ca64bdf32a4456a54b18127d216a098a581ab8f0b837f4b503c1",
+      "size_bytes": 524
+    },
+    {
+      "executable": false,
+      "path": "infrastructure/trino/catalog/iceberg.properties",
+      "sha256": "61fc7c7350888533b965ac5ff6ee25936337e3f444265a58de5a4616e09c4d94",
+      "size_bytes": 338
+    },
+    {
+      "executable": false,
+      "path": "reference-data/README.md",
+      "sha256": "5f9091e6b97643c81b0a824a6048fb79b0d35d855a130c181e5e84ca595f3584",
+      "size_bytes": 532
+    },
+    {
+      "executable": false,
+      "path": "reference-data/census/v1/README.md",
+      "sha256": "77f3e64f7a02bdb00b7ea681ec296ae182035199d3546dc030b772a1c7b76875",
+      "size_bytes": 1227
+    },
+    {
+      "executable": false,
+      "path": "reference-data/census/v1/arkansas_block_groups.geojson",
+      "sha256": "b2f26e5a2ff553cace3002ebc2f68e63be25bdf68c3c13444553eae3effd66a5",
+      "size_bytes": 13821031
+    },
+    {
+      "executable": false,
+      "path": "reference-data/census/v1/arkansas_boundary.geojson",
+      "sha256": "68ad3260bdae830621a862ff4e1a85025ad7e34461494f932611f3faf654e33d",
+      "size_bytes": 203602
+    },
+    {
+      "executable": false,
+      "path": "reference-data/census/v1/arkansas_urban_areas.geojson",
+      "sha256": "47021e8d26614930f498db083d99326a359151d943875ab0a24ead3a0544b844",
+      "size_bytes": 1162786
+    },
+    {
+      "executable": false,
+      "path": "reference-data/census/v1/census_block_groups.csv",
+      "sha256": "50f6b9ee48d1e3ee32592cef30559a01c6f8081638535126eb39a137400497d2",
+      "size_bytes": 135463
+    },
+    {
+      "executable": false,
+      "path": "reference-data/census/v1/census_places.csv",
+      "sha256": "329306532ac125c5fdf2cf828a8d5ec020fb67dd3ae748b196cf57bc43bdf7eb",
+      "size_bytes": 34564
+    },
+    {
+      "executable": false,
+      "path": "reference-data/census/v1/manifest.json",
+      "sha256": "574a4b83cad8c35ffcabf6be3d06d08e6f8be3a34a558901c00603847595d0b3",
+      "size_bytes": 2667
+    },
+    {
+      "executable": false,
+      "path": "reference-data/inventory/v1/README.md",
+      "sha256": "410c61e8cf2d38fdaa75c563451f32d330f44c9a3c7f75840bfe41b6afbaa429",
+      "size_bytes": 2451
+    },
+    {
+      "executable": false,
+      "path": "reference-data/inventory/v1/device_dependencies.csv",
+      "sha256": "ee4784994f50d697c9a8d314fb58d9591836d23afeed5a660500e661d888dafe",
+      "size_bytes": 35015
+    },
+    {
+      "executable": false,
+      "path": "reference-data/inventory/v1/devices.csv",
+      "sha256": "a2eea46b8bd1faa3a4ce96f1d91382b5838ae8ba906206cfa575122f3e232ee7",
+      "size_bytes": 66616
+    },
+    {
+      "executable": false,
+      "path": "reference-data/inventory/v1/manifest.json",
+      "sha256": "3c67de1f5615f9c8dd64d224278188d6d97edc017a28e3de7df8587bfe4ef1f1",
+      "size_bytes": 2126
+    },
+    {
+      "executable": false,
+      "path": "reference-data/inventory/v1/sites.csv",
+      "sha256": "af28e028be0c64be817ea874fbe9dfeb4c85e6183cf9806af543ae9d4f777de7",
+      "size_bytes": 78510
+    },
+    {
+      "executable": false,
+      "path": "solution/AI_USAGE.md",
+      "sha256": "5aa356917f155d067671b19034580157808d5569f2ab26a435b9a43fc508d7b1",
+      "size_bytes": 351
+    },
+    {
+      "executable": false,
+      "path": "solution/README.md",
+      "sha256": "a7aae6a22dc0adc5d06174b5d2d34ee4c8df90df3fd184e83f00a49f58819c8b",
+      "size_bytes": 730
+    },
+    {
+      "executable": false,
+      "path": "solution/airflow/Dockerfile",
+      "sha256": "b7f1e19f1e05d789522d76808600797ed860f32f46ea9da4525f530f47bd3ea1",
+      "size_bytes": 175
+    },
+    {
+      "executable": false,
+      "path": "solution/airflow/dags/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "executable": false,
+      "path": "solution/docker-compose.yml",
+      "sha256": "0f4cb79c34ac3d3bcf2b3041415ca0b1265c962cd93d8e4f5094e2a1b4c88e8f",
+      "size_bytes": 201
+    },
+    {
+      "executable": false,
+      "path": "solution/exports/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "executable": false,
+      "path": "solution/ingestion/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "executable": false,
+      "path": "solution/sql/README.md",
+      "sha256": "650a0e90c078e43ce41943051ed0292533d6bbc1e408764d5a6a3440f3eebe66",
+      "size_bytes": 270
+    },
+    {
+      "executable": true,
+      "path": "tests/smoke/infra.sh",
+      "sha256": "6b52ea4acaf7d3f9131559977818d8d108d9462b830b88516800e829dd1e03ea",
+      "size_bytes": 7711
+    }
+  ],
+  "package_name": "readydata-streaming-network-challenge",
+  "package_version": "v1",
+  "schema_version": 1
+}

@@ -1,0 +1,29 @@
+# Local environment and editor state
+.env
+.envrc
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Python caches, test output, and coverage
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Logs and local build artifacts
+*.log
+build/
+dist/
+*.egg-info/
+
+# Generated SQL-to-CSV output; preserve the directory contract
+solution/exports/*
+!solution/exports/.gitkeep
